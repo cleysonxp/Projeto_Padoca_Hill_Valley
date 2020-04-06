@@ -1,0 +1,52 @@
+#produtoDoMes{
+    width: 500px;
+    height: 80px;
+    background-color: #2e1408;
+    /* background-color: #911941; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 80px;
+    color: #ffffff;
+    border-radius: 20px;
+     box-shadow: 5px 5px 5px #000000;
+}
+
+#containerProdutoDoMes{
+    width: 1160px;
+    min-height: 400px;
+    height: auto;
+    /* background-color: tomato; */
+    margin-left: 20px;
+}
+
+#containerProdutoDoMes h1{
+    width: 500px;
+    border-bottom: 2px solid black;
+    font-size: 1.7em;
+    color: black;
+}
+
+#imagemProdutoDoMes{
+    width: 500px;
+    min-height: 100px;
+    height: auto;
+    /* background-color: teal; */
+    float: left;
+    margin-right: 30px;
+}
+
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+#containerProdutoTexto{
+    width: 600px;
+    height: 300px;
+    /* background-color: yellow; */
+    float: left;
+    
+}

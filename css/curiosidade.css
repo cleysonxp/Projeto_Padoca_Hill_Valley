@@ -1,0 +1,52 @@
+#curiosidadesProdutos{
+    width: 600px;
+    height: 80px;
+    background-color: #2e1408;
+    /* background-color: #911941; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 80px;
+    color: #ffffff;
+    border-radius: 20px;
+     box-shadow: 5px 5px 5px #000000;
+}
+
+.curiosidade{
+    width: 1100px;
+    height: 600px;
+    /* background-color: aqua;     */
+    margin-left: 20px;
+}
+
+.curiosidade h1{
+    width: 500px;
+    border-bottom: 2px solid black;
+    font-size: 1.7em;
+    color: black;
+}
+
+.curiosidadeProduto{
+    width: 400px;
+    height: 500px;
+    /* background-color: lawngreen; */
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    float: left;
+    margin-right: 30px;
+    color: black;
+}
+
+.imagemProduto{
+    width: 600px;
+    height: 500px;
+    /* background-color: lightblue; */
+    float: left;
+    background-image: url(../imagens/cafe3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}

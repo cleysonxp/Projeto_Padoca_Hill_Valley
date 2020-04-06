@@ -1,0 +1,394 @@
+*{
+    font-family: cursive ;
+}
+
+
+
+@media screen and (min-device-width:1300px){
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url(../imagens/papel-de-parede-padaria-e-cozinha-confeitaria-bon-appetit-banca.jpg);
+        background-attachment: fixed;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+/* CONTAINER QUE IRA CONTER TODO O CONTEUDO DE TODAS AS PAGINAS */
+.containerCorpo{
+    width: 1200px;
+    min-height: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255, 0.8);
+    padding-top: 140px;
+    overflow: hidden;
+
+}
+
+p{
+    font-size: 1.2em;
+    /* color: #ffffff; */
+    padding-left: 10px;
+    margin-top: 0px;
+    /* background-color: blue; */
+}
+
+
+
+/* SEÇÃO MENU */
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menuItem:hover > a{
+    color: #780732 ;
+}
+
+#containerCabecario{
+    width: 100%;
+    height: 100px;
+    /* background-color: #780732; */
+    background-color: #2e0d04;
+    position: fixed;
+    
+}
+
+#containerItem{
+    width: 1200px ;
+    height: inherit;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 10px; */
+    background-color: #000;
+    
+}
+
+#cabecarioContainerItem{
+    width: 1200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    padding-top: 10px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    background-color: #2e0d04;
+    /* background-color: #780732; */
+}
+
+#logo{
+    width: 120px ;
+    height: 80px;
+    background-color: #ffffff;
+    float: left;
+    margin-right: 20px;
+}
+
+/* MENU */
+#containerMenu{
+    width: 700px;
+    height: 80px;
+    /* background-color: aqua; */
+    float: left;
+    margin-top: 0px;
+    box-sizing: border-box;
+    padding-left:0px;
+    padding-top: 20px;
+}
+
+.menuItem{
+    list-style: none;
+    width: 95px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-right: 5px;
+    color: white;
+}
+
+.menuItem:hover{
+    background-color: #ffffff;
+    color: #780732;
+}
+
+/* Autenticação CMS */
+#containerAutenticacaoCMS{
+    width: 340px ;
+    height: 80px;
+    /* background-color: brown; */
+    float: right;
+}
+
+.usuario, .senha{
+    width: 140px;
+    height: 80px;
+    /* background-color: indigo; */
+    font-size: 20px;
+    color: #ffffff;
+    float: left;
+}
+
+.caixa{
+    width: 120px;
+    height: 24px;
+}
+
+#botaoOk{
+    width: 60px;
+    height: 80px;
+    /* background-color: #fff; */
+    float: left;
+}
+
+.botaoOk{
+    width: 50px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+
+/* SEÇÃO DO RODAPE */
+footer{
+    width: 1200px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex; */
+    /* float: right; */
+    /* background-color: #780732; */
+    background-color: #2e0d04;
+    padding: 30px;
+    box-sizing: border-box;
+    /* position: fixed; */
+    
+    
+}
+
+.sistemaInterno{
+    width: 200px;
+    height: 60px;
+    background-color: #ffffff;
+    /* margin: 30px; */
+    margin-right: 30px;
+    text-align: center;
+    line-height: 60px;
+    box-sizing: border-box;
+    float: left;
+    color:black ;
+}
+
+.endereco{
+    width: 600px;
+    height: 60px;
+    color: white;
+    /* margin-top: 60px; */
+    margin-right: 30px;
+    box-sizing: border-box;
+    font-size: 20px;
+    float: left;
+    /* background-color: burlywood; */
+    line-height: 60px;
+}
+
+.aplicativo{
+ width: 240px;
+ height: 80px;
+ float: left;
+ /* margin-top: 20px; */
+ /* background-color: #ffffff; */
+}
+
+.imagemApp{
+    width: 60px;
+    height: 80px;
+    background-color: lawngreen;
+    float: left;
+}
+
+.app{
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    line-height:60px;
+    margin-top: 10px;
+    background-color: lightcoral;
+    float: right;
+    color: black;
+}
+}
+
+@media screen and (max-device-width:780px){
+    body{
+        margin: auto;
+        background-image: url(../imagens/coffee.jpg);
+        background-attachment: fixed;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    /* CONTAINER QUE IRA CONTER TODO O CONTEUDO DE TODAS AS PAGINAS */
+.containerCorpo{
+    width: 1200px;
+    min-height: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding-top: 140px;
+    overflow: hidden;
+
+}
+
+p{
+    font-size: 1.2em;
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+
+
+/* SEÇÃO MENU */
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menuItem:hover > a{
+    color: #780732 ;
+}
+
+#containerCabecario{
+    width: 100%;
+    height: 100px;
+    background-color: #780732;
+    position: fixed;
+    
+}
+
+#containerItem{
+    width: 1200px ;
+    height: inherit;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 10px; */
+    background-color: #000;
+    
+}
+
+#cabecarioContainerItem{
+    width: 1200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    padding-top: 10px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    background-color: #780732;
+}
+
+#logo{
+    width: 120px ;
+    height: 80px;
+    background-color: #ffffff;
+    float: left;
+    margin-right: 20px;
+}
+
+/* MENU */
+#containerMenu{
+    width: 700px;
+    height: 80px;
+    /* background-color: aqua; */
+    float: left;
+    margin-top: 0px;
+    box-sizing: border-box;
+    padding-left:0px;
+    padding-top: 20px;
+    display: none;
+}
+
+.menuItem{
+    list-style: none;
+    width: 95px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-right: 5px;
+    color: white;
+}
+
+.menuItem:hover{
+    background-color: #ffffff;
+    color: #780732;
+}
+
+/* Autenticação CMS */
+#containerAutenticacaoCMS{
+    width: 340px ;
+    height: 80px;
+    /* background-color: brown; */
+    float: right;
+    display: none;
+}
+
+/* .usuario, .senha{
+    width: 140px;
+    height: 80px;
+    font-size: 20px;
+    color: #ffffff;
+    float: left;
+}
+
+.caixa{
+    width: 120px;
+    height: 24px;
+}
+
+#botaoOk{
+    width: 60px;
+    height: 80px;
+    float: left;
+}
+
+.botaoOk{
+    width: 50px;
+    height: 30px;
+    margin-top: 30px;
+} */
+
+
+/* SEÇÃO DO RODAPE */
+footer{
+    width: 100%;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex; */
+    /* float: right; */
+    background-color: #780732;
+    padding: 30px;
+    box-sizing: border-box;
+    /* position: fixed; */
+    
+    
+}
+
+
+}
+

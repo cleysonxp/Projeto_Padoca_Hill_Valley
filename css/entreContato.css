@@ -1,0 +1,103 @@
+
+
+#entreContato{
+    width: 340px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2e1408;
+    /* background-color: #911941; */
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black; 
+}
+
+#containerFormularioContato{
+    width: 400px;
+    height: 590px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding-left: 10px;
+    padding-top: 8px;
+    background-color: #2e1408;
+    /* background-color: #911941; */
+    box-sizing: border-box;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 18px;
+    margin-left: 200px;
+    float: left;
+    margin-right: 30px;
+    
+}
+
+#containerFormularioContato p{
+    margin: 0px;
+ 
+    box-sizing: border-box;
+}
+
+.formItens{
+    width: 190px;
+    height: 80px;
+    /* background-color:steelblue; */
+    /* padding-left: 5px; */
+    box-sizing: border-box;
+    float: left;
+}
+
+.formItemSexo{
+    width: 380px;
+    height: 80px;
+    float: left;
+    /* padding-left: 5px; */
+    box-sizing: border-box;
+    /* background-color:steelblue; */
+}
+
+.formItemSugestao{
+    width: 380px;
+    height: 120px;
+    float: left;
+    /* padding-left: 5px; */
+    box-sizing: border-box;
+    /* background-color: tan; */
+    /* float: left; */
+}
+
+.caixaInput{
+    width: 170px;
+    height: 20px
+}
+
+.areaTexto{
+    width: 364px;
+    height: 90px;
+    resize: none;
+}
+
+#containerBotao{
+    width: 370px;
+    height: 55px;
+    /* background-color: lightcoral; */
+    float: left;
+    line-height: 55px;
+    text-align: center;
+}
+
+#botaoEnviar{
+    width: 170px;
+    height: 34px;
+}
+
+#containerImagemContato{
+    width: 500px;
+    height: 370px;
+    float: left;
+}
+
+
