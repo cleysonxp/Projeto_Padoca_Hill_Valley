@@ -1,13 +1,97 @@
 @media screen and (min-device-width:1300px){
     /* Slide */
-.slide{
+.slideShow{
     width: 1200px;
-    height: 400px;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
     background-color: yellowgreen;
     padding-top: 100px;
-    
+    /* background-image: url(../imagens/padaria_2.jpg); */
+    background-size: cover;
+    overflow: hidden;
+}
+
+.slideShow .sliderShowArea{
+    width: 12000px;
+    height: 500px;
+    transition: all 1s ;
+    /* background-color: red; */
+}
+
+.slideShow .slide{
+    width: 1200px;
+    height: 500px;
+    float: left;
+    /* display: inline-block; */
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slideShow .slideConteudo {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.slideShow h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: "Times New Roman";
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slideShow .sliders-pointers{
+    width: 1200px;
+    height: 50px;
+    /* background-color: red; */
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideShow .pointer{
+    width: 30px;
+    height: 30px;
+    /* border: 2px solid #ffd700; */
+    border: 2px solid #dda520;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#slide1{
+    background-image: url(../imagens/padaria-1.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#slide2{
+    background-image: url(../imagens/padaria_3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#slide3{
+    background-image: url(../imagens/padaria_4.jpg);
+    background-size: cover;
+}
+
+#slide4{
+    background-image: url(../imagens/padaria_5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#slide5{
+    background-image: url(../imagens/padaria_6.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /* CONTAINER PRODUTOS */
@@ -25,7 +109,7 @@
     width: 1200px;
     min-height: 1000px;
     height: auto;
-    background: rgb(255, 255, 255, 0.5);
+    background: rgb(255, 255, 255, 0.7);
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -126,21 +210,81 @@
 
 @media screen and (max-device-width:780px){
     /* Slide */
-.slide{
-    width: 90%;
+    .slideShow{
+        width: 100%;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: yellowgreen;
+        padding-top: 100px;
+        /* background-image: url(../imagens/padaria_2.jpg); */
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .slideShow .sliderShowArea{
+        width: 12000px;
+        height: 400px;
+        transition: all 1s ;
+        /* background-color: red; */
+    }
+    
+    .slideShow .slide{
+        width: 100% ;
+        height: 400px;
+        float: left;
+        /* display: inline-block; */
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .slideShow .slideConteudo {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    
+    .slideShow h1{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 50px;
+        font-family: "Times New Roman";
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .slideShow .sliders-pointers{
+        width: 1200px;
+        height: 50px;
+        /* background-color: red; */
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        margin-top: -50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    
+    .slideShow .pointer{
+        width: 30px;
+        height: 30px;
+        /* border: 2px solid #ffd700; */
+        border: 2px solid #dda520;
+        border-radius: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+.responsivo{
+    width: 100%;
     height: 200px;
-    /* margin: auto; */
-    margin-left: auto;
-    margin-right: auto;
-    background-color: yellowgreen;
-    padding-top: 100px;
-    
-    
 }
 
 /* CONTAINER PRODUTOS */
 #container{
-    width: 90%;
+    width: 100%;
     min-height: 1000px;
     height: auto;
     margin-left: auto;
@@ -154,7 +298,7 @@
     width: 100%;
     min-height: 1000px;
     height: auto;
-    background: rgb(255, 255, 255, 0.5);
+    background: rgb(255, 255, 255, 0.7);
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -175,7 +319,7 @@
     line-height: 40px;
     text-align: center;
     margin-top: 5px;
-    background-color: #911941;
+    background-color: #2e1408;
     border: 2px solid white;
     box-sizing: border-box;
     color: white;
@@ -196,10 +340,9 @@
 
 /* CARDS */
 .cardProdutos{
-    width: 100px;
+    width: 300px;
     height: 440px;
-    background-color: #911941;
-    /* background-color: rgb(145, 25, 65, 0.95); */
+    background-color: #2e1408;
     color: #ffffff;
     border: 1px solid #ffffff;
     margin-left: 20px;
@@ -210,8 +353,13 @@
     /* float: right; */
 }
 
+.cardProdutos p{
+    color: #fff;
+    line-height: 50px;
+}
+
 .produtoImagem{
-    width: 20px;
+    width: 200px;
     height: 200px;
     margin: auto;
     margin-top: 20px;

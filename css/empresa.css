@@ -1,39 +1,98 @@
-.containerConteudoEmpresa{
-    width: 1000px;
-    height: 456px;
-    margin: auto;
-}
-
-#quemSomos{
-    width: 700px;
-    height: 80px;
-    background-color: #2e1408;
-    /* background-color: #911941; */
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    font-size: 2.5em;
-    text-align: center;
-    line-height: 80px;
-    color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px #000000;
-}
-
-.conteudoEmpresa{
-    width: 367px;
-    height: inherit;
-    /* background-color: #911941; */
-    float: left;
-    /* font-size: 1.2em;
-    padding-left: 5px;
-    box-sizing: border-box;
-    color: #ffffff; */
+@media screen and (min-device-width:1300px){
+    .containerConteudoEmpresa{
+        width: 1000px;
+        height: 456px;
+        margin: auto;
+    }
     
+    #quemSomos{
+        width: 700px;
+        height: 80px;
+        background-color: #2e1408;
+        /* background-color: #911941; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        font-size: 2.5em;
+        text-align: center;
+        line-height: 80px;
+        color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px #000000;
+    }
+    
+    .conteudoEmpresa{
+        width: 367px;
+        height: inherit;
+        float: left;
+        font-size: 1.5em;
+        /* background-color: #911941; */
+        /* font-size: 1.2em;
+        padding-left: 5px;
+        box-sizing: border-box;
+        color: #ffffff; */
+    }
+    
+    .imagemEmpresa{
+        width: 633px;
+        height: 425px;
+        float: left;
+    }
 }
 
-.imagemEmpresa{
-    width: 633px;
-    height: 425px;
-    float: left;
+@media screen and (max-device-width:780px){
+    .containerConteudoEmpresa{
+        width: 100%;
+        min-height: 456px;
+        height: auto;
+        /* margin: auto; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #quemSomos{
+        width: 90%;
+        height: 80px;
+        background-color: #2e1408;
+        /* background-color: #911941; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        font-size: 2.5em;
+        text-align: center;
+        line-height: 80px;
+        color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px #000000;
+    }
+    
+    .conteudoEmpresa{
+        width: 90%;
+        min-height: 300px;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        color: black;
+        font-size: 1.5em;
+        /* padding-bottom: 20px; */
+        /* background-color: #911941; */
+        /* font-size: 1.2em;
+        padding-left: 5px;
+        box-sizing: border-box;
+        /* color: #ffffff; */ 
+    }
+    
+    .imagemEmpresa{
+        width: 94%;
+        height: 320px;
+        margin: auto;
+        background-color: plum;
+        margin-bottom: 20px;
+    }
+
+    #imgEmpresa{
+        width: 100%;
+        height: 320px;
+    }
 }

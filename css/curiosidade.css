@@ -1,52 +1,123 @@
-#curiosidadesProdutos{
-    width: 600px;
-    height: 80px;
-    background-color: #2e1408;
-    /* background-color: #911941; */
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    font-size: 2.5em;
-    text-align: center;
-    line-height: 80px;
-    color: #ffffff;
-    border-radius: 20px;
-     box-shadow: 5px 5px 5px #000000;
-}
-
-.curiosidade{
-    width: 1100px;
-    height: 600px;
-    /* background-color: aqua;     */
-    margin-left: 20px;
-}
-
-.curiosidade h1{
-    width: 500px;
-    border-bottom: 2px solid black;
-    font-size: 1.7em;
-    color: black;
-}
-
-.curiosidadeProduto{
-    width: 400px;
-    height: 500px;
-    /* background-color: lawngreen; */
-    padding-left: 10px;
-    box-sizing: border-box;
-    font-size: 1.2em;
-    float: left;
-    margin-right: 30px;
-    color: black;
-}
-
-.imagemProduto{
-    width: 600px;
-    height: 500px;
-    /* background-color: lightblue; */
-    float: left;
-    background-image: url(../imagens/cafe3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+@media screen and (min-device-width:1300px){
+    #curiosidadesProdutos{
+        width: 600px;
+        height: 80px;
+        background-color: #2e1408;
+        /* background-color: #911941; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        font-size: 2.5em;
+        text-align: center;
+        line-height: 80px;
+        color: #ffffff;
+        border-radius: 20px;
+         box-shadow: 5px 5px 5px #000000;
+    }
     
+    .curiosidade{
+        width: 1100px;
+        height: 600px;
+        /* background-color: aqua;     */
+        margin-left: 20px;
+    }
+    
+    .curiosidade h1{
+        width: 420px;
+        border-bottom: 2px solid black;
+        font-size: 1.7em;
+        color: black;
+    }
+    
+    .curiosidadeProduto{
+        width: 400px;
+        min-height: 500px;
+        height: auto;
+        /* background-color: lawngreen; */
+        padding-left: 10px;
+        box-sizing: border-box;
+        font-size: 1.5em;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 50px;
+        color: black;
+        font-size: 1.5em;
+    }
+    
+    .imagemProduto{
+        width: 600px;
+        height: 500px;
+        /* background-color: lightblue; */
+        float: left;
+        background-image: url(../imagens/cafe3.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+    }
+}
+
+@media screen and (max-device-width:780px){
+    #curiosidadesProdutos{
+        width: 90%;
+        min-height: 80px;
+        height: auto;
+        background-color: #2e1408;
+        /* background-color: #911941; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        font-size: 2.5em;
+        text-align: center;
+        line-height: 80px;
+        color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px #000000;
+    }
+    
+    .curiosidade{
+        width: 90%;
+        min-height: 600px;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        /* background-color: aqua;     */
+        /* margin-left: 20px; */
+    }
+    
+    .curiosidade h1{
+        width: 90%;
+        border-bottom: 2px solid black;
+        font-size: 1.7em;
+        color: black;
+        /* margin-left: 20px; */
+    }
+    
+    .curiosidadeProduto{
+        width: 90%;
+        min-height: 100px;
+        height: auto;
+        /* text-align: center; */
+        /* background-color: lawngreen; */
+        /* padding-left: 10px; */
+        /* box-sizing: border-box; */
+        font-size: 1.2em;
+        /* margin-right: 30px; */
+        color: black;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .imagemProduto{
+        width: 94%;
+        height: 300px;
+        margin-bottom: 20px;
+        background-color: lightblue;
+        margin-right: auto;
+        margin-left: auto;
+        /* background-image: url(../imagens/cafe3.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%; */
+        
+    }
 }

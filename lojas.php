@@ -2,7 +2,7 @@
 
 require_once('funcoes/cabecalho.php');
 require_once('funcoes/rodape.php');
-
+require_once('funcoes/menuMobile.php');
 
 ?>
 
@@ -16,6 +16,8 @@ require_once('funcoes/rodape.php');
         <title>Padoka Hill Valley</title>
         <link rel="stylesheet" href="css/cabecario.css">
         <!-- <link rel="stylesheet" href="css/style2.css"> -->
+        <script src="js/jquery.js"></script>
+        <?php menuMobile();?>
     </head>
     <body>
     <?php cabecalho();?>

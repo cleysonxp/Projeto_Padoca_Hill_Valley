@@ -11,6 +11,61 @@ echo('
                 <div id="logo">
 
                 </div>
+
+                <nav id="containerMenuMobile">
+
+                    <div id="iconeMenu">
+
+                    </div>
+
+                    <div id="menuMobile">
+                        <ul>
+                            <li class="menu-item">
+                                <a href="index.php">
+                                     Home
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="promocoes.php">
+                                    Promoções
+                                </a>
+                            </li>
+                        
+                            <li class="menu-item">
+                                <a href="curiosidade.php">
+                                    Curiosidade
+                                </a>
+                            </li>
+                            
+                            <li class="menu-item">
+                                <a href="sobreEmpresa.php">
+                                    Empresa
+                                </a>
+                            </li>
+                            
+                            <li class="menu-item">
+                                <a href="produtoDoMes.php">
+                                    Campeão
+                                </a>
+                            </li>
+    
+                            <li class="menu-item">
+                                <a href="lojas.php">
+                                    Lojas
+                                </a>
+                            </li>
+                            
+                            <li class="menu-item">
+                                <a href="entreEmContato.php">
+                                    Contato
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+
                 <nav>
                     <ul id="containerMenu">
 
@@ -84,7 +139,5 @@ echo('
 ');
 
 }
-
-
 
 ?>

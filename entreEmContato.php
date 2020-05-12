@@ -2,6 +2,7 @@
 
 require_once('funcoes/cabecalho.php');
 require_once('funcoes/rodape.php');
+require_once('funcoes/menuMobile.php');
 
 ?>
 
@@ -13,8 +14,10 @@ require_once('funcoes/rodape.php');
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Padoka Hill Valley</title>
         <link rel="stylesheet" href="css/cabecario.css">
-        <link rel="stylesheet" href="css/style2.css">
+        <!-- <link rel="stylesheet" href="css/style2.css"> -->
         <link rel="stylesheet" href="css/entreContato.css">
+        <script src="js/jquery.js"></script>
+        <?php menuMobile();?>
         
     </head>
     <body>
@@ -86,6 +89,7 @@ require_once('funcoes/rodape.php');
                     
                     <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
                 </div>
+
             </form>
 
             <div id="containerImagemContato">

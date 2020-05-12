@@ -2,6 +2,7 @@
 
 require_once('funcoes/cabecalho.php');
 require_once('funcoes/rodape.php');
+require_once('funcoes/menuMobile.php');
 
 ?>
 
@@ -14,6 +15,9 @@ require_once('funcoes/rodape.php');
         <title>Padoka Hill Valley</title>
         <link rel="stylesheet" href="css/cabecario.css">
         <link rel="stylesheet" href="css/produtoDoMes.css">
+        <script src="js/jquery.js"></script>
+        <?php menuMobile();?>
+        
     </head>
     <body>
         <?php cabecalho();?>
@@ -28,8 +32,7 @@ require_once('funcoes/rodape.php');
 
                 <div id="containerProdutoTexto">
                     <p> Valor : R$ 5,00</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae alias corporis ab debitis quo hic, nobis, voluptatibus amet praesentium iure rerum mollitia, odit ea. Consequuntur corporis iure amet accusantiumLorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae alias corporis ab debitis quo hic, nobis, voluptatibus amet praesentium iure rerum mollitia, odit ea. Consequuntur corporis iure amet accusantiumLorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae alias corporis ab debitis quo hic, nobis, voluptatibus amet praesentium iure rerum mollitia, odit ea. Consequuntur corporis iure amet accusantium</p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae alias corporis ab debitis quo hic, nobis, voluptatibus amet praesentium iure rerum mollitia, odit ea. Consequuntur corporis iure amet accusantiumLorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae alias corporis ab debitis quo hic, nobis, voluptatibus amet praesentium iure rerum mollitia, odit ea. Consequuntur corporis iure amet accusantiumLorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae alias corporis ab debitis quo hic, nobis, voluptatibus amet praesentium iure rerum mollitia, odit ea. Consequuntur corporis iure amet accusantium.
                 </div>
             </section>
 

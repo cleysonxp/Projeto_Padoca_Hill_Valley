@@ -2,6 +2,7 @@
 
 require_once('funcoes/cabecalho.php');
 require_once('funcoes/rodape.php');
+require_once('funcoes/menuMobile.php');
 
 ?>
 <!DOCTYPE html>
@@ -13,8 +14,10 @@ require_once('funcoes/rodape.php');
         <title>Padoka Hill Valley</title>
         <link rel="stylesheet" href="css/style2.css">
         <link rel="stylesheet" href="css/cabecario.css">
-        <!-- <link rel="stylesheet" href="css/inicioSlide.css">
-        <link rel="stylesheet" href="css/slide.css"> -->
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <?php menuMobile();?>
+        
     </head>
 
     
@@ -22,8 +25,21 @@ require_once('funcoes/rodape.php');
         
     <?php cabecalho();?>
 
-        <div class="slide">
-        
+        <div class="slideShow" id="slideShow">
+            <div class="sliderShowArea">
+                <div class="slide" id="slide1"></div>
+                <div class="slide" id="slide2"></div>
+                <div class="slide" id="slide3"></div>
+                <div class="slide" id="slide4"></div>
+                <div class="slide" id="slide5"></div>
+            </div>
+            <div class="sliders-pointers">
+                <div class="pointer" onclick="mudarSlide(0)"></div>
+                <div class="pointer" onclick="mudarSlide(1)"></div>
+                <div class="pointer" onclick="mudarSlide(2)"></div>
+                <div class="pointer" onclick="mudarSlide(3)"></div>
+                <div class="pointer" onclick="mudarSlide(4)"></div>
+            </div>
         </div>
 
         <div id="container">
@@ -192,7 +208,7 @@ require_once('funcoes/rodape.php');
         </div>
         
         <?php rodape();?>
-        <!-- <script src="js/jquery.js"></script>
-        <script src="js/slider.js"></script> -->
+        
+        
     </body>
 </html>

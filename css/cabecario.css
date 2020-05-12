@@ -1,5 +1,8 @@
 *{
-    font-family: cursive ;
+    /* font-family: cursive; */
+    font-family: garamond;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -22,7 +25,7 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255, 0.7);
     padding-top: 140px;
     overflow: hidden;
 
@@ -30,6 +33,7 @@
 
 p{
     font-size: 1.2em;
+    line-height: 2.5;
     /* color: #ffffff; */
     padding-left: 10px;
     margin-top: 0px;
@@ -54,7 +58,7 @@ a:link, a:visited, a:active{
     /* background-color: #780732; */
     background-color: #2e0d04;
     position: fixed;
-    
+    z-index: 999;
 }
 
 #containerItem{
@@ -90,6 +94,10 @@ a:link, a:visited, a:active{
 }
 
 /* MENU */
+#containerMenuMobile{
+    display: none;
+}
+
 #containerMenu{
     width: 700px;
     height: 80px;
@@ -152,7 +160,7 @@ a:link, a:visited, a:active{
 .botaoOk{
     width: 50px;
     height: 30px;
-    margin-top: 30px;
+    margin-top: 21px;
 }
 
 
@@ -229,33 +237,31 @@ footer{
 @media screen and (max-device-width:780px){
     body{
         margin: auto;
-        background-image: url(../imagens/coffee.jpg);
+        background-image: url(../imagens/papel-de-parede-padaria-e-cozinha-confeitaria-bon-appetit-banca.jpg);
         background-attachment: fixed;
         background-size: 100%;
-        background-repeat: no-repeat;
+        /* background-repeat: no-repeat; */
         background-color: rgba(0, 0, 0, 0.6);
     }
 
     /* CONTAINER QUE IRA CONTER TODO O CONTEUDO DE TODAS AS PAGINAS */
 .containerCorpo{
-    width: 1200px;
-    min-height: 800px;
+    width: 100%;
+    min-height: 300px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255, 0.7);
     padding-top: 140px;
     overflow: hidden;
-
+    /* text-align: center; */
 }
 
 p{
     font-size: 1.2em;
-    color: #ffffff;
+    color: #000;
     padding-left: 10px;
 }
-
-
 
 /* SEÇÃO MENU */
 a:link, a:visited, a:active{
@@ -270,43 +276,83 @@ a:link, a:visited, a:active{
 #containerCabecario{
     width: 100%;
     height: 100px;
-    background-color: #780732;
+    background-color: #2e1408;
     position: fixed;
+    
     
 }
 
 #containerItem{
-    width: 1200px ;
+    width: 100%;
     height: inherit;
     /* margin: auto; */
     margin-left: auto;
     margin-right: auto;
     /* padding-top: 10px; */
-    background-color: #000;
+    background-color: pink;
     
 }
 
 #cabecarioContainerItem{
-    width: 1200px;
+    width: 100%;
     height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    position: fixed;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* position: fixed; */
     padding-top: 10px;
-    padding-left: 5px;
+    /* padding-left: 5px; */
+    /* float: left; */
     box-sizing: border-box;
-    background-color: #780732;
+    background-color: #2e1408;
+    /* padding-left: 50%; */
 }
 
 #logo{
     width: 120px ;
     height: 80px;
     background-color: #ffffff;
-    float: left;
-    margin-right: 20px;
+    /* float: left; */
+    /* margin-right: 20px; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* MENU */
+#containerMenuMobile{
+    width: 100px;
+    height: inherit;
+    /* background-color: red; */
+    position: fixed;
+    margin-top: -80px;
+}
+
+#iconeMenu{
+    width: 80px;
+    height: 80px;
+    background-image: url(../icones/bares.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-item{
+    /* background-color: pink; */
+    width: 70%;
+    margin-left: 20px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    list-style-type: none;
+    border-bottom: 1px solid white;
+}
+
+#menuMobile{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0 , 0, 0.9);
+    position: fixed;
+    z-index: 999;
+    display: none;
+}
+
 #containerMenu{
     width: 700px;
     height: 80px;
@@ -331,12 +377,9 @@ a:link, a:visited, a:active{
     border-radius: 10px;
     margin-right: 5px;
     color: white;
+    display: none;
 }
 
-.menuItem:hover{
-    background-color: #ffffff;
-    color: #780732;
-}
 
 /* Autenticação CMS */
 #containerAutenticacaoCMS{
@@ -376,19 +419,77 @@ a:link, a:visited, a:active{
 /* SEÇÃO DO RODAPE */
 footer{
     width: 100%;
-    height: 120px;
+    min-height: 120px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     /* display: flex; */
     /* float: right; */
-    background-color: #780732;
+    background-color: #2e1408;
     padding: 30px;
     box-sizing: border-box;
     /* position: fixed; */
-    
-    
 }
 
+footer div {
+    color: #fff;
+}
+
+.sistemaInterno{
+    width: 200px;
+    height: 60px;
+    background-color: #ffffff;
+    /* margin: 30px; */
+    /* margin-right: 30px; */
+    text-align: center;
+    line-height: 60px;
+    box-sizing: border-box;
+    /* float: left; */
+    color:black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.endereco{
+    width: 90%;
+    height: 60px;
+    color: white;
+    /* margin-top: 60px; */
+    margin-right: 30px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    /* float: left; */
+    /* background-color: burlywood; */
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.aplicativo{
+ width: 240px;
+ height: 80px;
+ /* float: left; */
+ /* margin-top: 20px; */
+ /* background-color: #ffffff; */
+}
+
+.imagemApp{
+    width: 60px;
+    height: 80px;
+    background-color: lawngreen;
+    float: left;
+}
+
+.app{
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    line-height:60px;
+    margin-top: 10px;
+    background-color: lightcoral;
+    float: right;
+    color: black;
+}
 
 }
 

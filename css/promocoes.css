@@ -1,73 +1,154 @@
-#promocoes{
-    width: 600px;
-    height: 80px;
-    /* background-color: #911941; */
-    /* background-color: #000000; */
-    /* background-color: #964b00; */
-    /* background-color: #43291c; */
-    background-color: #2e1408;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    font-size: 2.5em;
-    text-align: center;
-    line-height: 80px;
-    color: #ffffff;
-    border-radius: 20px;
-     box-shadow: 5px 5px 5px #000000;
+@media screen and (min-device-width:1300px){
+    #promocoes{
+        width: 600px;
+        height: 80px;
+        /* background-color: #911941; */
+        /* background-color: #000000; */
+        /* background-color: #964b00; */
+        /* background-color: #43291c; */
+        background-color: #2e1408;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        font-size: 2.5em;
+        text-align: center;
+        line-height: 80px;
+        color: #ffffff;
+        border-radius: 20px;
+         box-shadow: 5px 5px 5px #000000;
+    }
+    
+    .cardProdutos{
+        width: 300px;
+        height: 460px;
+        /* background-color: #911941; */
+        /* background-color: #964b00; */
+        /* background-color: #43291c; */
+        background-color: #2e1408;
+        /* background-color: rgb(145, 25, 65,5)    ; */
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        float: left;
+        border-radius: 10px;
+        /* float: right; */
+    }
+    
+    .produtoImagem{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        margin-top: 20px;
+        border: 1px solid #ffffff;
+        margin-bottom: 10px;
+    }
+    
+    .cardProdutos p{
+        padding-left: 20px;
+    }
+    
+    .detalhe{
+        float: right;
+        padding-right: 20px;
+    }
+    
+    .containerCorpo  {
+        padding-left: 110px;
+        box-sizing: border-box;
+    }
+    
+    .informacoes{
+        width: 100%;
+        height: 220px;
+        /* background-color: aquamarine; */
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 8px;
+        font-size: 1.1em;
+    }
+    
+    .antigo{
+        text-decoration: line-through;
+    }
 }
 
-.cardProdutos{
-    width: 300px;
-    height: 460px;
-    /* background-color: #911941; */
-    /* background-color: #964b00; */
-    /* background-color: #43291c; */
-    background-color: #2e1408;
-    /* background-color: rgb(145, 25, 65,5)    ; */
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    float: left;
-    border-radius: 10px;
-    /* float: right; */
-}
-
-.produtoImagem{
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    margin-top: 20px;
-    border: 1px solid #ffffff;
-    margin-bottom: 10px;
-}
-
-.cardProdutos p{
-    padding-left: 20px;
-}
-
-.detalhe{
-    float: right;
-    padding-right: 20px;
-}
-
-.containerCorpo  {
-    padding-left: 110px;
-    box-sizing: border-box;
-}
-
-.informacoes{
-    width: 100%;
-    height: 220px;
-    /* background-color: aquamarine; */
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 8px;
-    font-size: 1.1em;
-}
-
-.antigo{
-    text-decoration: line-through;
+@media screen and (max-device-width:780px){
+    
+    #promocoes{
+        width: 90%;
+        min-height: 80px;
+        height: auto;
+        /* background-color: #911941; */
+        /* background-color: #000000; */
+        /* background-color: #964b00; */
+        /* background-color: #43291c; */
+        background-color: #2e1408;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        font-size: 2.5em;
+        text-align: center;
+        line-height: 80px;
+        color: #ffffff;
+        border-radius: 20px;
+         box-shadow: 5px 5px 5px #000000;
+    }
+    
+    .cardProdutos{
+        width: 300px;
+        height: 460px;
+        background-color: #2e1408;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-left: 20px; */
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        /* float: left; */
+        border-radius: 10px;
+    }
+    
+    .produtoImagem{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        margin-top: 20px;
+        border: 1px solid #ffffff;
+        margin-bottom: 10px;
+    }
+    
+    .cardProdutos p{
+        padding-left: 20px;
+        color: #fff;
+        line-height: 40px;
+        /* background-color: pink; */
+        margin-left: -20px;
+    }
+    
+    .detalhe{
+        /* float: right; */
+        /* padding-right: 20px; */
+    }
+    
+    /* .containerCorpo  {
+        padding-left: 110px;
+        box-sizing: border-box;
+    } */
+    
+    .informacoes{
+        width: 100%;
+        height: 220px;
+        /* background-color: aquamarine; */
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 8px;
+        font-size: 1.1em;
+    }
+    
+    .antigo{
+        text-decoration: line-through;
+    }
 }
