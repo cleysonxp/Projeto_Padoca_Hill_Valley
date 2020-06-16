@@ -1,0 +1,58 @@
+#container_consulta{
+    width: 1000px;
+    min-height: 200px;
+    height: auto;
+    background-color: blanchedalmond;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tblConsulta{
+    width: 100%;
+    min-height: 30px;
+    height: auto;
+    border: solid 1px black;
+}
+
+.linha_titulo{
+    width: 100px;
+    height: 50px;
+    background-color: dodgerblue;
+    border: solid 1px black;
+    text-align: center;
+}
+
+.linha{
+    width: 1000px;
+    height: 50px;
+    background-color: brown;
+    border: solid 1px black;
+    text-align: center;
+}
+
+.coluna{
+    width: 50px;
+    height: inherit;
+    border: solid 1px black;
+    font-size: 18px;
+}
+
+.tblImagem{
+    width: auto;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.excluir, .editar{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-left: 5px;
+}
+
+.excluir{
+    background-image: url(../../icones/trash.png);
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+}

@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body{
+    background-image: url(../../imagens/titanium.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.container_topo{
+    margin-top: 50px;
+    width: 1200px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2e1408;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border: 3px solid white;
+}
+
+.container_titulo{
+    width: 700px;
+    height: inherit;
+    line-height: 300px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+    font-size: 1.8em;
+    font-weight: bold;
+    float: left;
+}
+
+.cms{
+    font-size: 2em;
+}
+
+.conatiner_image{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    float: left;
+    margin-top: 50px;
+    /* box-sizing: border-box; */
+}
+
+/* Area do menu */
+.container_menu{
+    width: 1200px;
+    height: 200px;
+    background-color: #2e1408;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.container_menu_icone{
+    width: 250px;
+    height: 200px;
+    /* background-color: white; */
+    text-align: center;
+    font-size: 1.3em;
+    float: left;
+    padding-top: 20px;
+    box-sizing: border-box;
+    /* border-right: 1px solid white; */
+}
+
+.container_menu_icone:hover{
+    background-color: crimson;
+}
+
+.menu_icone{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.container_bemvindo{
+    width: 300px;
+    height: inherit;
+    /* background-color: lightseagreen;s */
+    float: right;
+    font-size: 1.4em;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+#logout{
+    margin-top: 65px;
+    margin-left: 200px;
+}
+
+
+
+/* area do footer */
+footer{
+    width: 1200px;
+    height:50px;
+    background-color: #2e1408;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    line-height: 50px;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+    /* color: #ffffff; */
+}
+
+.container_corpo{
+    width: 1200px;
+    min-height: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.container_corpo_titulo{
+    width: 350px;
+    height: 70px;
+    /* background-color:blue; */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    color: black;
+}

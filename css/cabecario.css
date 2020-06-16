@@ -86,11 +86,13 @@ a:link, a:visited, a:active{
 }
 
 #logo{
-    width: 120px ;
+    width: 80px ;
     height: 80px;
     background-color: #ffffff;
     float: left;
     margin-right: 20px;
+    background-image: url(../imagens/logo3.png);
+    background-size: 100%;
 }
 
 /* MENU */
@@ -278,7 +280,7 @@ a:link, a:visited, a:active{
     height: 100px;
     background-color: #2e1408;
     position: fixed;
-    
+    z-index: 999;
     
 }
 

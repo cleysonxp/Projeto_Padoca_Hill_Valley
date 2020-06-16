@@ -1,0 +1,202 @@
+
+/* css da pagina de adicionar novas permissões */
+
+
+.formulario_permissoes{
+    width: 550px;
+    min-height: 560px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2e1408;
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
+
+.form_titulo{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    /* background-color: crimson; */
+}
+
+.linha_formulario{
+    width: inherit;
+    height: 60px;
+    /* background-color: burlywood; */
+}
+
+.linha_formularioFC{
+    width: inherit;
+    height: 80px;
+    /* background-color: burlywood; */
+}
+
+.tituloInput{
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 60px;
+    /* background-color: lightcoral; */
+    float: left;
+}
+
+.tituloInputFC{
+    width: 200px;
+    height: 80px;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+    /* background-color: indigo; */
+    float: left;
+}
+
+.linha_input{
+    width: 350px;
+    height: 60px;
+    /* background-color: rgb(73, 54, 54); */
+    float: left;
+    line-height: 60px;
+}
+
+.linha_inputFC{
+    width: 350px;
+    height: 80px;
+    /* background-color: indianred; */
+    float: left;
+    padding-top: 12px;
+    box-sizing: border-box;
+    /* line-height: 80px; */
+}
+
+.caixa{
+    width: 280px;
+    height: 40px;
+    color: black;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 14px;
+    height: 1.2em;
+    margin-right: 10px;
+    transform: scale(1.5);
+    margin-left: 20px;
+}
+
+.radio{
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.linha_formulario_desc{
+    width: 100%;
+    height: 180px;
+    /* background-color: blueviolet; */
+}
+
+.descTitulo{
+    width: inherit;
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    /* background-color: firebrick; */
+}
+
+.linha_input_desc{
+    width: 550px;
+    height: 120px;
+    /* background-color: forestgreen; */
+    text-align: center;
+}
+
+.areaTexto{
+    width: 500px;
+    height: 120px;
+    resize: none;
+    font-size: 1.5em;
+    padding-top: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.botaoPermissoes{
+    width: 170px;
+    height: 40px;
+    color: black;
+}
+
+.btn{
+    line-height: 60px;
+    text-align: center;
+}
+
+#permissoes{
+    width: 1000px;
+    min-height: 120px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2e1408;
+}
+
+#permissoes table {
+    width: inherit;
+    height: inherit;
+}
+
+#permissoes table tr{
+    height: 50px;
+}
+
+#permissoes table tr td{
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    border: solid 1px white;
+}
+
+.tituloPermissao{
+    text-align: center;
+    font-size: 24px;
+    background-color: #fff;
+    color: black;
+}
+
+.container_img{
+    width: 120px;
+    height: 50px;
+    /* background-color: indigo; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.excluir, .editar{
+    width: 45px;
+    height: 45px;
+    float: left;
+    /* background-color: hotpink; */
+    
+}
+
+.excluir{
+    margin-right: 20px;
+    background-image: url(../../icones/lixeira.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.editar{
+    background-image: url(../../icones/edita.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

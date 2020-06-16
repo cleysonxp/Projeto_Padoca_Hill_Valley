@@ -1,0 +1,161 @@
+.formulario_usuario{
+    width: 470px;
+    height: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2e1408;
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
+
+.form_titulo{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.linha, .linhaNP{
+    width: 100%;
+    height: 60px; 
+}
+
+.linhaNP{
+    height: 80px; 
+    /* background-color: cyan; */
+}
+
+.linha_titulo{
+    width: 120px;
+    height: 60px;
+    float: left;
+    font-size: 22px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.linha_tituloNP{
+    width: 120px;
+    height: 80px;
+    float: left;
+    font-size: 22px;
+    text-align: center;
+    /* background-color: crimson; */
+    padding-top: 13px;
+    box-sizing: border-box;
+}
+
+.linha_dados{
+    width: 350px;
+    height: 60px;
+    /* background-color: darkblue; */
+    float: left;
+}
+
+.caixa, .caixaNP{
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    color: black;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.caixaNP{
+    margin-top: 20px;
+}
+
+.slt{
+    width: 313px;
+    height: 40px;
+    font-size: 1em;
+    color: black;
+    margin-top: 20px;
+}
+
+.slt > option{
+    color: black;
+    font-size: 1em;
+}
+
+.linha_botao{
+    width: 100%;
+    height: 50px;
+    /* background-color: crimson; */
+    text-align: center;
+}
+
+.btn{
+    width: 200px;
+    height: 40px;
+    color: black;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#usuarios{
+    width: 1000px;
+    min-height: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2e1408;
+}
+
+#usuarios table{
+    width: inherit;
+    height: inherit;
+}
+
+#usuarios table tr{
+    height: 50px;
+}
+
+#usuarios table tr td{
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    border: solid 1px white;
+}
+
+.container_img{
+    width: 185px;
+    height: 50px;
+    /* background-color: indigo; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.excluir, .editar, .visualizar{
+    width: 45px;
+    height: 45px;
+    float: left;
+    /* background-color: hotpink; */
+    
+}
+
+.excluir{
+    margin-right: 20px;
+    background-image: url(../../icones/lixeira.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.editar{
+    margin-right: 20px;
+    background-image: url(../../icones/edita.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.visualizar{
+    background-image: url(../../icones/search.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.tituloUsuario{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}

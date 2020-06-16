@@ -27,11 +27,21 @@ require_once('funcoes/menuMobile.php');
 
         <div class="slideShow" id="slideShow">
             <div class="sliderShowArea">
-                <div class="slide" id="slide1"></div>
-                <div class="slide" id="slide2"></div>
-                <div class="slide" id="slide3"></div>
-                <div class="slide" id="slide4"></div>
-                <div class="slide" id="slide5"></div>
+                <div class="slide" id="slide1">
+                    <img src="imagens/padaria-1.jpg" class="responsivoSlide" alt="" srcset="">
+                </div>
+                <div class="slide" id="slide2">
+                    <img src="imagens/padaria_3.jpg" class="responsivoSlide" alt="" srcset="">
+                </div>
+                <div class="slide" id="slide3">
+                    <img src="imagens/padaria_4.jpg" class="responsivoSlide" alt="">
+                </div>
+                <div class="slide" id="slide4">
+                    <img src="imagens/padaria_5.jpg" class="responsivoSlide" alt="">
+                </div>
+                <div class="slide" id="slide5">
+                    <img src="imagens/padaria_6.jpg" class="responsivoSlide" alt="">
+                </div>
             </div>
             <div class="sliders-pointers">
                 <div class="pointer" onclick="mudarSlide(0)"></div>

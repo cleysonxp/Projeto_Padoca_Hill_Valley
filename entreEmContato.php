@@ -3,6 +3,10 @@
 require_once('funcoes/cabecalho.php');
 require_once('funcoes/rodape.php');
 require_once('funcoes/menuMobile.php');
+require_once('db/conexao.php');
+
+
+$conex = conexaoMysql(); 
 
 ?>
 
@@ -17,6 +21,7 @@ require_once('funcoes/menuMobile.php');
         <!-- <link rel="stylesheet" href="css/style2.css"> -->
         <link rel="stylesheet" href="css/entreContato.css">
         <script src="js/jquery.js"></script>
+
         <?php menuMobile();?>
         
     </head>
@@ -26,76 +31,107 @@ require_once('funcoes/menuMobile.php');
     
         <div class="containerCorpo">
 
-            <div id="entreContato"> 
-                Entre em contato
-            </div>
-            <form name="" method="post">
-                <div id="containerFormularioContato">
+            <form name="formulario_entre_em_contato" action="db/insertCliente.php?modo=inserir" method="post">
+                <div class="container_formulario">
 
-                    <div class="formItens">
-                        <p>Nome</p>
-                        <input class="caixaInput" type="text" name="nome" required value="">
+                    <div class="formulario_titulo">Entre em Contato</div>
+                    
+                    <div class="formulario_linha">
+                        <div class="linha_titulo">Nome*</div>        
+                        <div class="linha_input">
+                            <input class="caixaInput" type="text" name="txtNome" required value="">
+                        </div>
+                    </div>
+    
+                    <div class="formulario_linha">
+                        <div class="linha_titulo">Telefone</div>        
+                        <div class="linha_input">
+                            <input class="caixaInput" id="telefone" type="text" name="txtTelefone"  value="">
+                        </div>
+                    </div>
+    
+                    <div class="formulario_linha">
+                        <div class="linha_titulo">Celular*</div>        
+                        <div class="linha_input">
+                            <input class="caixaInput" type="text" name="txtCelular" required value="">
+                        </div>
+                    </div>
+    
+                    <div class="formulario_linha">
+                        <div class="linha_titulo">Email*</div>        
+                        <div class="linha_input">
+                            <input class="caixaInput" type="text" name="txtEmail" required value="">
+                        </div>
+                    </div>
+    
+                    <div class="formulario_linha">
+                        <div class="linha_titulo fb">Link do Facebook</div>        
+                        <div class="linha_input">
+                            <input class="caixaInput" type="text" name="txtFacebook"  value="">
+                        </div>
+                    </div>
+    
+                    <div class="formulario_linha">
+                        <div class="linha_titulo">Home Page</div>        
+                        <div class="linha_input">
+                            <input class="caixaInput" type="text" name="txtHomePage"  value="">
+                        </div>
+                    </div>
+    
+                    <div class="formulario_linha">
+                        <div class="linha_titulo">Profissão*</div>        
+                        <div class="linha_input">
+                            <input class="caixaInput" type="text" name="txtProfissao" required value="">
+                        </div>
+                    </div>
+    
+                    <div class="formulario_linha">
+                        <div class="linha_titulo">Sexo*</div>        
+                        <div class="linha_input radios">
+                            <input type="radio" name="rdoSexo" value="M" required>Masculino
+                            <input type="radio" name="rdoSexo" value="F" required>Feminino
+                        </div>
+                    </div>
+    
+                    <div class="formulario_linha">
+                        <div class="linha_titulo fb">Tipo da Mensagem*</div>        
+                        <div class="linha_input radios">
+                            <select class="slt" name="sltTipoMensagem" required>
+                                <option value="" selected>Selecione o tipo da mensagem</option>
+                                <?php
+                                
+                                $sql = "select * from tbltipomensagem order by tipo_mensagem;";
+
+                                $selectTipoMensagem = mysqli_query($conex, $sql);
+                                
+
+                                while( $rsTipoMensagem = mysqli_fetch_assoc($selectTipoMensagem))
+                                {
+                                ?>
+                                <option value="<?=$rsTipoMensagem['idTipoMensagem']?>">
+                                    <?=$rsTipoMensagem['tipo_mensagem']?>
+                                </option>                            
+                                <?php
+                                }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="formulario_linha_msg">
+                        <div class="msgTitulo">Mensagem*</div>        
+                        <div class="linha_input ">
+                            <textarea class="areaTexto" name="txtObs" cols="50" rows="7" required></textarea>
+                        </div>
                     </div>
 
-                    <div class="formItens">
-                        <p>Telefone</p>
-                        <input class="caixaInput" type="text" name="telefone" value="">
+                    <div class="formulario_linha btn">
+                        <input class="botaoEnviar" type="submit" value="Salvar" name="btnEnviar">
                     </div>
-                    
-                    <div class="formItens">
-                        <p>Celular</p>
-                        <input class="caixaInput" type="text" name="celular" value="">
-                    </div>
-                    
-                    <div class="formItens">
-                        <p>Email</p>
-                        <input class="caixaInput" type="text" name="email" value="">
-                    </div>
-                    
-                    <div class="formItens">
-                        <p>Facebook</p>
-                        <input class="caixaInput" type="text" name="facebook" value="">
-                    </div>
-                    
-                    <div class="formItens">
-                        <p>Home Page</p>
-                        <input class="caixaInput" type="text" name="homepage" value="">
-                    </div>
-                    
-                    <div class="formItens">
-                        <p>Mensagem</p>
-                        <input class="caixaInput" type="text" name="" value="">
-                    </div>
-                    
-                    <div class="formItens">
-                        <p>Profissão</p>
-                        <input class="caixaInput" type="text" name="" value="">
-                    </div>
-                    
-                    <div class="formItemSexo">
-                        <p>Sexo</p>
-                        <input type="radio" name="sexo" value="" >Masculino
-                        <input type="radio" name="sexo" value="" >Feminino
-                        <input type="radio" name="sexo" value="" >Outros
-                    </div>
-
-                    <div class="formItemSugestao">
-                        <p>Sugestão</p>
-                        <textarea class="areaTexto" name="" value="" ></textarea>
-                    </div>
-                    <div id="containerBotao">
-                        <input id="botaoEnviar" type="submit" value="Enviar">
-                    </div>
-                    
-                    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+    
                 </div>
-
             </form>
-
-            <div id="containerImagemContato">
-                <img src="imagens/xicaraDeCafe.jpg" alt="xicaraDeCafe">
-            </div>
-
+            
         </div>
         <?php rodape();?>
     </body>

@@ -1,5 +1,7 @@
 @media screen and (min-device-width:1300px){
     /* Slide */
+
+
 .slideShow{
     width: 1200px;
     height: 500px;
@@ -43,6 +45,11 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+.responsivoSlide{
+    width: 100%;
+    height: 400;
+}
+
 .slideShow .sliders-pointers{
     width: 1200px;
     height: 50px;
@@ -66,7 +73,7 @@
     cursor: pointer;
 }
 
-#slide1{
+/* #slide1{
     background-image: url(../imagens/padaria-1.jpg);
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -92,7 +99,7 @@
     background-image: url(../imagens/padaria_6.jpg);
     background-size: cover;
     background-position: center;
-}
+} */
 
 /* CONTAINER PRODUTOS */
 #container{
@@ -212,10 +219,11 @@
     /* Slide */
     .slideShow{
         width: 100%;
-        height: 400px;
+        min-height: 10px;
+        height: auto;
         margin-left: auto;
         margin-right: auto;
-        background-color: yellowgreen;
+        background-color: rgb(255, 255, 255, 0.7);
         padding-top: 100px;
         /* background-image: url(../imagens/padaria_2.jpg); */
         background-size: cover;
@@ -223,21 +231,25 @@
     }
     
     .slideShow .sliderShowArea{
-        width: 12000px;
-        height: 400px;
+        min-width: 12000px;
+        width: auto;
+        min-height: 10px;
+        height: auto;
         transition: all 1s ;
         /* background-color: red; */
     }
     
     .slideShow .slide{
-        width: 100% ;
-        height: 400px;
+        min-width: 100px;
+        width: auto;
+        min-height: 10px;
+        height: auto;
         float: left;
         /* display: inline-block; */
-        background-color: rgba(0, 0, 0, 0.6);
+        /* background-color: rgba(0, 0, 0, 0.6); */
     }
     
-    .slideShow .slideConteudo {
+    /* .slideShow .slideConteudo {
         display: flex;
         height: 100%;
         justify-content: center;
@@ -251,7 +263,7 @@
         font-size: 50px;
         font-family: "Times New Roman";
         background-color: rgba(0, 0, 0, 0.6);
-    }
+    } */
     
     .slideShow .sliders-pointers{
         width: 1200px;
@@ -275,11 +287,50 @@
         margin-left: 5px;
         margin-right: 5px;
         cursor: pointer;
+        display: none;
     }
+    
+    
+    /* #slide1{
+        width: 336px;
+        height: 300px;
+        background-image: url(../imagens/padaria-1.jpg);
+        background-color: rgba(0, 0, 0, 0.6);
+    } */
+    
+    /* #slide2{
+        width: 100%;
+        height: 300px;
+        background-image: url(../imagens/padaria_3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #slide3{
+        background-image: url(../imagens/padaria_4.jpg);
+        background-size: cover;
+    }
+    
+    #slide4{
+        background-image: url(../imagens/padaria_5.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #slide5{
+        background-image: url(../imagens/padaria_6.jpg);
+        background-size: cover;
+        background-position: center;
+    } */
 
 .responsivo{
     width: 100%;
     height: 200px;
+}
+
+.responsivoSlide{
+    width: 100%;
+    height: 400;
 }
 
 /* CONTAINER PRODUTOS */

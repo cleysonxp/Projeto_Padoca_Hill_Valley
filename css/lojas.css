@@ -1,0 +1,109 @@
+@media screen and (min-device-width:1300px){
+    .titulo_lojas{
+        width: 500px;
+        height: 80px;
+        background-color: #2e1408;
+        /* background-color: #911941; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        font-size: 1.5em;
+        text-align: center;
+        line-height: 80px;
+        color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px #000000;
+    }
+    
+    .container_loja{
+        width: 1000px;
+        height: 250px;
+        margin-left: 70px;
+        background-color: #2e0d04;
+        padding-top: 25px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    
+    .imagem_loja{
+        width: 400px;
+        height: 200px;
+        background-color: black;
+        margin-left: 20px;
+        float: left;
+    }
+    
+    .container_funcionamento{
+        width: 555px;
+        height: 200px;
+        /* background-color: blanchedalmond; */
+        float: left;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+    
+    .container_funcionamento > p{
+        color: white;
+        font-size: 1.4em;
+    }    
+}
+
+@media screen and (max-device-width:780px){
+    .titulo_lojas{
+        width: 90%;
+        height: 80px;
+        background-color: #2e1408;
+        /* background-color: #911941; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        font-size: 1.5em;
+        text-align: center;
+        line-height: 80px;
+        color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px #000000;
+    }
+    
+    .container_loja{
+        width: 90%;
+        min-height: 250px;
+        height: auto;
+        /* margin-left: 70px; */
+        background-color: #2e0d04;
+        padding-top: 25px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .imagem_loja{
+        width: 90%;
+        height: 200px;
+        background-color: black;
+        /* margin-left: 20px; */
+        /* float: left; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    
+    .container_funcionamento{
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+        /* background-color: blanchedalmond; */
+        /* float: left; */
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+    
+    .container_funcionamento > p{
+        color: white;
+        font-size: 1.4em;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }    
+}
+

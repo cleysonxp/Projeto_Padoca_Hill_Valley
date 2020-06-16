@@ -15,7 +15,7 @@ echo('
                 <nav id="containerMenuMobile">
 
                     <div id="iconeMenu">
-
+                        <img src="../imagens/logo.png" alt="">
                     </div>
 
                     <div id="menuMobile">

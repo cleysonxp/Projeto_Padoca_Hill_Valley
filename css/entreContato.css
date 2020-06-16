@@ -1,217 +1,264 @@
 @media screen and (min-device-width:1300px){
-    #entreContato{
-        width: 340px;
-        height: 80px;
+
+    .container_formulario{
+        width: 600px;
+        min-height: 1050px;
+        height: auto;
+        background-color: #2e1408;
         margin-left: auto;
         margin-right: auto;
-        background-color: #2e1408;
-        /* background-color: #911941; */
-        font-size: 30px;
-        color: white;
-        line-height: 80px;
-        text-align: center;
-        margin-bottom: 50px;
-        border-radius: 20px;
-        box-shadow: 5px 5px 5px black; 
+        margin-bottom: 100px;
+        border-radius: 30px;
+        border: 2px solid white;
     }
-    
-    #containerFormularioContato{
-        width: 400px;
-        min-height: 600px;
-        height: auto;
-        /* margin-left: auto;
-        margin-right: auto; */
-        padding-left: 10px;
-        padding-top: 8px;
-        background-color: #2e1408;
-        /* background-color: #911941; */
-        box-sizing: border-box;
-        font-size: 1.2em;
+
+    .formulario_titulo{
+        width: inherit;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
         color: white;
-        border-radius: 18px;
-        margin-left: 200px;
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    .formulario_linha{
+        width: inherit;
+        height: 80px;        
+    }
+
+    .linha_titulo{
+        width: 170px;
+        height: 80px;
+        line-height: 80px;
+        /* background-color: #fff; */
+        font-size: 1.8em;
+        padding-left: 20px;
+        box-sizing: border-box;
+        color: white;
         float: left;
-        margin-right: 30px;
+        /* padding-top: 18px; */
+    }
+
+    .fb{
+        line-height:normal;
+        padding-top: 11px;
+        box-sizing: border-box;
+    }
+
+    .linha_input{
+        width: 430px;
+        height: 70px;
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        float: left;
         
     }
-    
-    #containerFormularioContato p{
-        margin: 0px;
-     
-        box-sizing: border-box;
-    }
-    
-    .formItens{
-        width: 190px;
-        height: 80px;
-        /* background-color:steelblue; */
-        /* padding-left: 5px; */
-        box-sizing: border-box;
-        float: left;
-    }
-    
-    .formItemSexo{
-        width: 380px;
-        height: 80px;
-        float: left;
-        /* padding-left: 5px; */
-        box-sizing: border-box;
-        /* background-color:steelblue; */
-    }
-    
-    .formItemSugestao{
-        width: 100%;
-        height: 120px;
-        /* float: left; */
-        /* padding-left: 5px; */
-        box-sizing: border-box;
-        /* background-color: tan; */
-        float: left;
-    }
-    
+
     .caixaInput{
-        width: 94%;
-        height: 20px;
-        /* background-color: plum; */
-    }
-    
-    .areaTexto{
         width: 90%;
-        height: 90px;
-        resize: none;
-        margin-bottom: 20px;
+        height: 50px;
+        font-size: 1.5em;
+        /* padding-left: 20px; */
+        box-sizing: border-box;
+        padding-left: 15px;
+        
     }
-    
-    #containerBotao{
+
+    .slt{
         width: 370px;
-        height: 55px;
-        /* background-color: lightcoral; */
-        float: left;
-        margin-top: 25px;
-        line-height: 55px;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    .radios{
+        color: white;
+        font-size: 1.5em;
+        line-height: 50px;
+    }
+
+    input[type=radio] {
+        border: 0px;
+        width: 14px;
+        height: 1.2em;
+        margin-right: 10px;
+        transform: scale(1.5);
+        margin-left: 20px;
+    }
+
+    .formulario_linha_msg{
+        width: 100%;
+        height: 300px;
+        /* background-color: antiquewhite; */
+    }
+
+    .msgTitulo{
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        font-size: 1.8em;
+        padding-left: 20px;
+        box-sizing: border-box;
+        color: white;
+        /* background-color: aquamarine; */
+    }
+
+    .areaTexto{
+        width: 550px;
+        height: 200px;
+        resize: none;
+        font-size: 1.5em;
+        padding-top: 15px;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .btn{
         text-align: center;
+        padding-top: 15px;
+        box-sizing: border-box;
     }
-    
-    #botaoEnviar{
-        width: 170px;
-        height: 34px;
-        font-size: 1.1em;
+
+    .botaoEnviar{
+        width: 300px;
+        height: 50px;
+        font-size: 1.6em;
+        font-weight: bold;
     }
-    
-    #containerImagemContato{
-        width: 500px;
-        height: 370px;
-        float: left;
-    }
+
 }
 
 @media screen and (max-device-width:780px){
-    #entreContato{
+    .container_formulario{
         width: 90%;
-        height: 80px;
+        min-height: 1050px;
+        height: auto;
+        background-color: #2e1408;
         margin-left: auto;
         margin-right: auto;
-        background-color: #2e1408;
-        /* background-color: #911941; */
-        font-size: 30px;
-        color: white;
-        line-height: 80px;
+        margin-bottom: 100px;
+        border-radius: 30px;
+        border: 2px solid white;
+    }
+
+    .formulario_titulo{
+        width: inherit;
+        height: 120px;
+        /* line-height: 90px; */
         text-align: center;
-        margin-bottom: 50px;
-        border-radius: 20px;
-        box-shadow: 5px 5px 5px black; 
-    }
-    
-    #containerFormularioContato{
-        width: 90%;
-        min-height: 90px;
-        height: auto;
-        /* margin-left: auto;
-        margin-right: auto; */
-        padding-left: 10px;
-        /* padding-top: 8px; */
-        background-color: #2e1408;
-        /* background-color: #911941; */
-        box-sizing: border-box;
-        font-size: 1.2em;
         color: white;
-        border-radius: 18px;
-        /* margin-left: 200px; */
-        /* float: left; */
-        /* margin-right: 30px; */
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-        margin-bottom: 50px;
+        font-size: 3em;
+        font-weight: bold;
+        margin-top: 20px;
     }
-    
-    #containerFormularioContato p{
-        width: 80%;
-        min-height: 10px;
-        height: auto;
-        margin: 0px;
-        color: #fff;
-        box-sizing: border-box;
-    }
-    
-    .formItens{
-        width: 100%;
-        height: 80px;
-        /* background-color:steelblue; */
-        /* padding-left: 5px; */
-        box-sizing: border-box;
-        /* float: left; */
-    }
-    
-    .formItemSexo{
-        width: 380px;
-        height: 80px;
-        /* float: left; */
-        /* padding-left: 5px; */
-        box-sizing: border-box;
-        /* background-color:steelblue; */
-    }
-    
-    .formItemSugestao{
+
+    .formulario_linha{
         width: 100%;
         height: 120px;
-        /* float: left; */
-        /* padding-left: 5px; */
-        box-sizing: border-box;
-        /* background-color: tan; */
-        /* float: left; */
     }
     
-    .caixaInput{
-        width: 80%;
-        height: 20px
-    }
-    
-    .areaTexto{
-        width: 86%;
-        height: 90px;
-        resize: none;
-    }
-    
-    #containerBotao{
+
+    .linha_titulo{
         width: 100%;
-        height: 55px;
-        /* background-color: lightcoral; */
-        /* float: left; */
-        line-height: 55px;
+        height: 40px;
+        font-size: 1.8em;
+        padding-left: 20px;
+        box-sizing: border-box;
+        color: white;
+    }
+
+    .fb{
+        line-height:normal;
+        padding-top: 11px;
+        box-sizing: border-box;
+    }
+
+    .linha_input{
+        width: 100%;
+        height: 70px;
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .caixaInput{
+        width: 90%;
+        height: 40px;
+        font-size: 1.5em;
+        box-sizing: border-box;
+        padding-left: 15px;
+        
+    }
+
+    .slt{
+        width: 90%;
+        height: 40px;
+        font-size: 0.8em;
+    }
+
+    .radios{
+        color: white;
+        font-size: 1.5em;
+        line-height: 50px;
+    }
+
+    input[type=radio] {
+        border: 0px;
+        width: 14px;
+        height: 1.2em;
+        margin-right: 10px;
+        transform: scale(1.5);
+        margin-left: 20px;
+    }
+
+    .formulario_linha_msg{
+        width: 100%;
+        height: 200px;
+    }
+
+    .msgTitulo{
+        width: 100%;
+        height: 40px;
+        font-size: 1.8em;
+        padding-left: 20px;
+        box-sizing: border-box;
+        color: white
+    }
+    /* .msg{
+        height: 80px;
+        background-color: violet;
+    } */
+
+    .masgTitulo{
+        /* background-color: tomato; */
+        height: 150px;
+        line-height: 150px;
+    }
+
+    .areaTexto{
+        width: 90%;
+        height: 120px;
+        resize: none;
+        font-size: 1.5em;
+        padding-top: 15px;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .btn{
         text-align: center;
+        padding-top: 15px;
+        box-sizing: border-box;
     }
-    
-    #botaoEnviar{
-        width: 170px;
-        height: 34px;
-        font-size: 1.1em;
-    }
-    
-    #containerImagemContato{
-        width: 500px;
-        height: 370px;
-        float: left;
-        display: none;
+
+    .botaoEnviar{
+        width: 90%;
+        height: 50px;
+        font-size: 1.6em;
+        font-weight: bold;
     }
 }
+

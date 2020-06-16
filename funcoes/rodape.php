@@ -8,7 +8,9 @@ function rodape(){
         <footer>
 
             <div class="sistemaInterno">
-                Sistema Interno
+                <a href="cms/index.php">
+                    Sistema Interno
+                </a>
             </div>
 
             <div class="endereco">
