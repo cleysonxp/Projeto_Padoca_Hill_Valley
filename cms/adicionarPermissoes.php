@@ -6,8 +6,6 @@
     $acessoProdutos = null;
     $acessoUsuarios = null;
     $acessoFaleConosco = null;
-    
-    
 
     $action = "../db/inserirPermissao.php?modo=inserir";
 
@@ -59,7 +57,14 @@
     </head>
     <body>
 
+        
+
         <div class="container_formulario">
+            <a href="admUsuarios.php">
+                <div class="flecha" alt="voltar">
+                    🡨
+                </div>
+            </a>
             
             <form name="formulario_inserir_permissoes" action="<?=$action?>" method="post">
                 <div class="formulario_permissoes">

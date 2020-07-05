@@ -16,9 +16,10 @@
                 $nomeLogin = $_POST['txtNomeLogin'];
                 $senha = $_POST['txtSenha'];
                 $nivelpermissao = $_POST['sltPermissao'];
+                $estadoConta = $_POST['rdoEstadoConta'];
 
-                $sql = "insert into tblusuarios (nome, celular,email, nomeLogin, senha, idPermissao)
-                value ('".$nome."', '".$celular."', '".$email."', '".$nomeLogin."', '".$senha."', '".$nivelpermissao."')";
+                $sql = "insert into tblusuarios (nome, celular,email, nomeLogin, senha, idPermissao, estadoConta)
+                value ('".$nome."', '".$celular."', '".$email."', '".$nomeLogin."', '".$senha."', '".$nivelpermissao."','".$estadoConta."')";
 
                 // echo($sql);
 

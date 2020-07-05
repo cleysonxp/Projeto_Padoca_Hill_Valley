@@ -13,7 +13,7 @@ body{
 }
 
 .container_topo{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     width: 1200px;
     height: 300px;
     margin-left: auto;
@@ -131,17 +131,32 @@ a:link, a:visited, a:active{
     background-color: white;
     border-left: 3px solid white;
     border-right: 3px solid white;
-    padding-top: 120px;
+    /* padding-top: 120px; */
     padding-bottom: 40px;
 }
 
 .container_corpo_titulo{
-    width: 350px;
+    width: 470px;
     height: 70px;
+    line-height: 70px;
+    font-weight: bold;
+    padding-top: 40px;
     /* background-color:blue; */
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 30px;
+    font-size: 34px;
+    color: black;
+}
+
+.editConteudo{
+    width: 300px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    background-color: grey;
+    margin-left: 20px;
+    margin-bottom: 20px;
     color: black;
 }

@@ -1,15 +1,23 @@
+.imgEmpresa{
+    width: 100%;
+    height: auto;
+}
+
 @media screen and (min-device-width:1300px){
     .containerConteudoEmpresa{
         width: 1000px;
-        height: 456px;
-        margin: auto;
+        min-height: 400px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        /* background-color: aqua; */
+        margin-bottom: 50px;
     }
     
     #quemSomos{
         width: 700px;
         height: 80px;
         background-color: #2e1408;
-        /* background-color: #911941; */
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 50px;
@@ -22,22 +30,26 @@
     }
     
     .conteudoEmpresa{
-        width: 367px;
-        height: inherit;
-        float: left;
+        width: 100%;
+        min-height: 10px;
+        height: auto;
         font-size: 1.5em;
-        /* background-color: #911941; */
-        /* font-size: 1.2em;
-        padding-left: 5px;
+        background-color: #2e1408;
+        margin-right: 30px;
+        color: white;
+        padding: 10px;
         box-sizing: border-box;
-        color: #ffffff; */
+        margin-bottom: 20px;
     }
     
     .imagemEmpresa{
-        width: 633px;
-        height: 425px;
-        float: left;
+        width: 500px;
+        min-height: 100px;
+        height: auto;
+        /* background-color: bisque; */
     }
+
+    
 }
 
 @media screen and (max-device-width:780px){
@@ -73,21 +85,25 @@
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 20px;
-        color: black;
         font-size: 1.5em;
+        color: white;
+        background-color: #2e1408;
+        padding: 10px;
+        box-sizing: border-box;
         /* padding-bottom: 20px; */
         /* background-color: #911941; */
         /* font-size: 1.2em;
         padding-left: 5px;
         box-sizing: border-box;
-        /* color: #ffffff; */ 
+        /* color: #ffffff;  */
     }
     
     .imagemEmpresa{
         width: 94%;
-        height: 320px;
+        min-height: 20px;
+        height: auto;
         margin: auto;
-        background-color: plum;
+        /* background-color: plum; */
         margin-bottom: 20px;
     }
 

@@ -1,6 +1,6 @@
 .formulario_usuario{
     width: 470px;
-    height: 530px;
+    height: 620px;
     margin-left: auto;
     margin-right: auto;
     background-color: #2e1408;
@@ -45,11 +45,15 @@
     box-sizing: border-box;
 }
 
-.linha_dados{
+.linha_dados, .linha_dadosNP{
     width: 350px;
     height: 60px;
     /* background-color: darkblue; */
     float: left;
+}
+
+.linha_dadosNP{
+    height: 80px;
 }
 
 .caixa, .caixaNP{
@@ -158,4 +162,109 @@
     background-color: white;
     color: black;
     font-size: 20px;
+}
+
+.flecha{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    background-color: blue;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.flecha:hover{
+    background-color: white;
+    /* border: 1px solid blue; */
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 14px;
+    height: 1.2em;
+    margin-right: 10px;
+    transform: scale(1.5);
+    margin-left: 20px;
+}
+
+.rdo{
+    line-height: 80px;
+    font-size: 20px;
+}
+
+/* Estilização da modal */
+#modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999;
+    position: fixed;
+    padding-top: 100px;
+    display: none;
+}
+
+#modalConteudo{
+    width: 600px;
+    height: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+/* .linhaFechar{
+    width: 100%;
+    height: 35px;
+} */
+
+.visualizar_titulo{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+    background-color: #2e1408;
+    text-align: center;
+}
+
+.fechar{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    /* float: right; */
+    border: 1px solid red;
+    margin-left: auto;
+    text-align: center;
+    font-size: 22px;
+    /* margin-right: auto; */
+}
+
+.fechar:hover{
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+}
+
+#visualizar table{
+    width: 600px;
+    min-height: 20px;
+    height: auto;
+}
+
+#visualizar table tr{
+    height: 50px;
+    /* width: 100%; */
+}
+
+#visualizar table tr td{
+    width: 50%;
+    color: black;
+    font-size: 24px;
+    border: solid 1px black;
 }

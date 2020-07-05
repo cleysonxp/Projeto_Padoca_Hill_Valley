@@ -23,14 +23,14 @@
                     
                     <!-- AREA DE OPÇÕES DO MENU -->
                     <div class="container_menu_icone">
-
-                        <div class="menu_icone">
-                            
-                        </div>
-                        <p>
-                            Adm. Conteúdo
-                        </p>
-
+                    <a href="admConteudo.php">
+                            <div class="menu_icone">
+                                
+                            </div>
+                            <p>
+                                Adm. Conteúdo
+                            </p>
+                        </a>
                     </div>
 
                     <div class="container_menu_icone">

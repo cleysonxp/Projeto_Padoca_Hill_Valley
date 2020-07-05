@@ -31,16 +31,19 @@
     
     .curiosidadeProduto{
         width: 400px;
-        min-height: 500px;
+        min-height: 100px;
         height: auto;
-        /* background-color: lawngreen; */
+        background-color: #2e1408;
         padding-left: 10px;
         box-sizing: border-box;
         font-size: 1.5em;
         float: left;
         margin-right: 30px;
         margin-bottom: 50px;
-        color: black;
+        margin-top: 5px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        color: white;
         font-size: 1.5em;
     }
     
@@ -72,6 +75,7 @@
         color: #ffffff;
         border-radius: 20px;
         box-shadow: 5px 5px 5px #000000;
+        
     }
     
     .curiosidade{
@@ -80,6 +84,7 @@
         height: auto;
         margin-right: auto;
         margin-left: auto;
+        
         /* background-color: aqua;     */
         /* margin-left: 20px; */
     }
@@ -97,15 +102,17 @@
         min-height: 100px;
         height: auto;
         /* text-align: center; */
-        /* background-color: lawngreen; */
+        background-color: #2e1408;
+        color: white; 
         /* padding-left: 10px; */
         /* box-sizing: border-box; */
         font-size: 1.2em;
         /* margin-right: 30px; */
-        color: black;
         margin-bottom: 20px;
         margin-right: auto;
         margin-left: auto;
+        margin-top: 5px;
+        padding: 10px;
     }
     
     .imagemProduto{

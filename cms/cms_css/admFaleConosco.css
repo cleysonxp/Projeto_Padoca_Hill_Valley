@@ -1,40 +1,8 @@
-#container_consulta{
-    width: 1000px;
-    min-height: 200px;
-    height: auto;
-    background-color: blanchedalmond;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #tblConsulta{
     width: 100%;
     min-height: 30px;
     height: auto;
     border: solid 1px black;
-}
-
-.linha_titulo{
-    width: 100px;
-    height: 50px;
-    background-color: dodgerblue;
-    border: solid 1px black;
-    text-align: center;
-}
-
-.linha{
-    width: 1000px;
-    height: 50px;
-    background-color: brown;
-    border: solid 1px black;
-    text-align: center;
-}
-
-.coluna{
-    width: 50px;
-    height: inherit;
-    border: solid 1px black;
-    font-size: 18px;
 }
 
 .tblImagem{
@@ -44,15 +12,152 @@
     margin-right: auto;
 }
 
-.excluir, .editar{
+.excluir, .visualizar{
     width: 50px;
     height: 50px;
     float: left;
     margin-left: 5px;
+    /* background-color: brown; */
 }
 
 .excluir{
-    background-image: url(../../icones/trash.png);
+    background-image: url(../../icones/lixeira.png);
     background-repeat: no-repeat;
-    background-size: 90% 90%;
+    background-size: 100% 100%;
+}
+
+.visualizar{
+    background-image: url(../../icones/search.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#container_consulta{
+    width: 1000px;
+    min-height: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2e1408;
+}
+
+#container_consulta table{
+    width: inherit;
+    height: inherit;
+}
+
+#container_consulta table tr{
+    height: 50px;
+}
+
+#container_consulta table tr td{
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    border: solid 1px white;
+}
+
+/* Estilização da modal */
+#modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999;
+    position: fixed;
+    padding-top: 100px;
+    display: none;
+}
+
+#modalConteudo{
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    overflow: scroll;
+}
+
+/* .linhaFechar{
+    width: 100%;
+    height: 35px;
+} */
+
+.visualizar_titulo{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+    background-color: #2e1408;
+    text-align: center;
+    /* padding-top: 32px; */
+}
+
+#fechar{
+    width: 600px;
+    height: 32px;
+    position: fixed;
+    /* background-color: chartreuse; */
+}
+
+.fechar{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    /* float: right; */
+    border: 1px solid red;
+    /* margin-left: auto; */
+    text-align: center;
+    font-size: 22px;
+    /* margin-right: auto; */
+    /* position: fixed; */
+}
+
+.fechar:hover{
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+}
+
+#visualizar table{
+    width: 600px;
+    min-height: 20px;
+    height: auto;
+}
+
+#visualizar table tr{
+    height: 50px;
+    /* width: 100%; */
+}
+
+#visualizar table tr td{
+    width: 50%;
+    color: black;
+    font-size: 24px;
+    border: solid 1px black;
+}
+
+.filtro{
+    width: 400px;
+    height: 50px;   
+    margin-left: 700px;
+    background-color: blue;
+    margin-bottom: 10px;
+}
+
+.select{
+    width: 300px;
+    height: 50px;
+    color: black;
+    font-size: 19px;
+}
+
+.btnFiltrar{
+    width: 70px;
+    height: 50px;
+    color: black;
+}
+
+.letra{
+    color: black;
 }

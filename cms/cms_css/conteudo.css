@@ -1,0 +1,209 @@
+.flecha{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    background-color: blue;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.flecha:hover{
+    background-color: white;
+    /* border: 1px solid blue; */
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container_conteudo_dados{
+    width: 550px;
+    min-height: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2e1408;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.linha_titulo_container{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 32px;
+}
+
+.linha{
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid white;
+}
+
+.linha_titulo{
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+    font-size: 30px;
+}
+
+.linha_entrada_dados{
+    width: 350px;
+    height: 60px;
+    float: left;
+}
+
+.caixa_dados{
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: black;
+}
+
+.alinhar{
+    line-height: 60px;
+}
+
+.linha_texto{
+    width: 100%;
+    height: 170px;
+    border-top: 1px solid white;
+}
+
+.linha_titulo_texto{
+    width: 200px;
+    height: 170px;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    line-height: 170px;
+}
+
+.linha_entrada_texto{
+    width: 350px;
+    height: 170px;
+    float: left;
+    margin-top: 10px;
+}
+
+.areaTexto{
+    width: 330px;
+    height: 150px;
+    resize: none;
+    color: black;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.btn{
+    text-align: center;
+    line-height: 60px;
+    padding-top: 20px;
+}
+
+.btnSalvar{
+    width: 200px;
+    height: 40px;
+    color: black;
+    font-size: 20px;
+}
+
+#tabela_conteudo{
+    width: 1000px;
+    min-height: 120px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2e1408;
+}
+
+#tabela_conteudo table {
+    width: inherit;
+    height: inherit;
+}
+
+#tabela_conteudo table tr{
+    height: 50px;
+}
+
+#tabela_conteudo table tr td{
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    border: solid 1px white;
+}
+
+.titulo_conteudo{
+    text-align: center;
+}
+
+
+.container_img{
+    width: 185px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.excluir, .editar, .visualizar{
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+
+.excluir{
+    margin-right: 20px;
+    background-image: url(../../icones/lixeira.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.editar{
+    margin-right: 20px;
+    background-image: url(../../icones/edita.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.visualizar{
+    background-image: url(../../icones/search.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagem{
+    width: inherit;
+    height: inherit;
+}
+
+.linha_Imagem{
+    width: 100%;
+    height: 250px;
+    border-top: 1px solid white;
+}
+
+#imagem{
+    width: 230px;
+    height: 230px;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.imagem2{
+    width: inherit;
+    height: inherit;
+}
