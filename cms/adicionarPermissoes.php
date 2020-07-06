@@ -9,7 +9,8 @@
 
     $action = "../db/inserirPermissao.php?modo=inserir";
 
-
+    require_once('funcoes/topo.php');
+    require_once('funcoes/rodape.php');
     require_once('../db/conexao.php');
 
     $conex = conexaoMysql();
@@ -52,14 +53,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Padoka Hill Valley</title>
+        <link rel="stylesheet" href="cms_css/style.css">
         <link rel="stylesheet" href="cms_css/admUsuarios.css">
         <link rel="stylesheet" href="cms_css/adicionarPermissoes.css">
     </head>
     <body>
 
-        
+        <?php topo()?>
 
-        <div class="container_formulario">
+        <div class="container_corpo">
             <a href="admUsuarios.php">
                 <div class="flecha" alt="voltar">
                     🡨
@@ -166,5 +168,6 @@
 
         </div>
     
+        <?php rodape()?>
     </body>
 </html>
