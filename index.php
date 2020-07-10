@@ -24,23 +24,7 @@ require_once('funcoes/menuMobile.php');
     <body>  
         
     <?php cabecalho();?>
-        <div id="container">
-
-            <div id="redesSociais">
-                <div class="redesSociais">
-                    <img src="imagens/facebook.png" alt="facebook" >
-                </div>
-
-                <div class="redesSociais">
-                    <img src="imagens/instagram.png" alt="instagram">
-                </div>
-
-                <div class="redesSociais">
-                    <img src="imagens/twitter.png" alt="twitter">
-                </div>
-            </div>
-
-            <div class="slideShow" id="slideShow">
+    <div class="slideShow" id="slideShow">
                 <div class="sliderShowArea">
                     <div class="slide" id="slide1">
                         <img src="imagens/padaria-1.jpg" class="responsivoSlide" alt="" srcset="">
@@ -66,7 +50,24 @@ require_once('funcoes/menuMobile.php');
                     <div class="pointer" onclick="mudarSlide(4)"></div>
                 </div>
             </div>
+        <div id="container">
 
+
+            <div id="redesSociais">
+                <div class="redesSociais">
+                    <img src="imagens/facebook.png" alt="facebook" >
+                </div>
+
+                <div class="redesSociais">
+                    <img src="imagens/instagram.png" alt="instagram">
+                </div>
+
+                <div class="redesSociais">
+                    <img src="imagens/twitter.png" alt="twitter">
+                </div>
+            </div>
+
+            
             <div id="containerProdutos" >
 
                 <div id="menuProdutos">

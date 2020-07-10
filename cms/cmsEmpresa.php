@@ -82,7 +82,7 @@
             
             <div class="container_conteudo_dados">
 
-                <form name="frmFoto" id="frmFoto" action="../db/uploadImagemEmpresa.php" method="post" enctype="multipart/form-data">
+                <form name="frmFoto" id="frmFoto" action="../db/uploadImagemLoja.php" method="post" enctype="multipart/form-data">
                     <div class="linha_titulo_container">Página Sobre a Empresa</div>
                     <div class="linha">
                         <div class="linha_titulo">Imagem</div>

@@ -71,6 +71,8 @@
                 $('.visualizar').click(function(){
                     $('#modal').fadeIn(1000);
                 });
+
+                $('.rdoEstadoConta').click()
             });
 
             function visualizarUsuario (idUsuario)
@@ -82,6 +84,17 @@
                     success: function(dados) {
                         $('#modalConteudo').html(dados);
                     }
+                });
+            }
+
+            function updateEstadoConta(idUsuario,estadoConta){
+                $.ajax({
+                    type: "POST",
+                    url:"../db/updateEstadoConta.php",
+                    data:{id:idUsuario, estado:estadoConta}
+                    // success: function(dados){
+                    //     $('#estadoContas').html(dados);
+                    // }
                 });
             }
         </script>
@@ -184,8 +197,8 @@
                     <div class="linhaNP">
                         <div class="linha_tituloNP">Estado da conta</div>
                         <div class="linha_dadosNP rdo">
-                            <input type="radio" name="rdoEstadoConta" value="1" <?php if($estadoConta == '1') echo('checked')?> >Ativada
-                            <input type="radio" name="rdoEstadoConta" value="0" <?php if($estadoConta == '0') echo('checked')?> >Desativada
+                            <input class="rdoEstadoConta" type="radio" name="rdoEstadoConta" value="1" <?php if($estadoConta == '1') echo('checked')?> >Ativada
+                            <input class="rdoEstadoConta" type="radio" name="rdoEstadoConta" value="0" <?php if($estadoConta == '0') echo('checked')?> >Desativada
                         </div>
                     </div>
 
@@ -227,14 +240,16 @@
                         <td><?=$rsUsuario['celular']?></td>
                         <td><?=$rsUsuario['email']?></td>
                         <td><?=$rsUsuario['nivel']?></td>
+                        
                         <td>
-                            <form action="" method="POST">
+                            <form class="estadoContas" method="POST" onclick="updateEstadoConta(<?=$rsUsuario['idUsuario']?>,<?=$rsUsuario['estadoConta']?>);">
                                 <input class="estadoConta" type="radio" name="rdoEstado" value="1"
                                  <?php if($estado == '1') echo('checked')?> >Ativada   
                                 <input class="estadoConta" type="radio" name="rdoEstado" value="0"
                                 <?php if($estado == '0') echo('checked')?> >Desativada
                             </form>
                         </td>
+
                         <td>
                             <div class="container_img">
 

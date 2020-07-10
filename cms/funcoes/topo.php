@@ -25,7 +25,7 @@
                     <div class="container_menu_icone">
                     <a href="admConteudo.php">
                             <div class="menu_icone">
-                                
+                                <img class="imgIcone" src="../icones/conteudo.png" alt="">
                             </div>
                             <p>
                                 Adm. Conteúdo
@@ -37,7 +37,7 @@
 
                         <a href="admFaleConosco.php">
                             <div class="menu_icone">
-                                
+                            <img class="imgIcone" src="../icones/faleConosco.png" alt="">
                             </div>
                             <p>
                                 Adm. Fale Conosco
@@ -48,7 +48,7 @@
                     <div class="container_menu_icone">
                         <a href="admUsuarios.php">
                             <div class="menu_icone">
-                                
+                                <img class="imgIcone" src="../icones/usuarios.png" alt="">
                             </div>
                             <p>
                                 Adm. Usuários

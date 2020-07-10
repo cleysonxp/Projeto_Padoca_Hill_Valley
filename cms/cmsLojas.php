@@ -93,6 +93,17 @@
                     }
                 });
             }
+            function updateEstadoLoja(idLoja,modo){
+                $.ajax({
+                    type: "POST",
+                    url:"../db/updateEstadoLoja.php",
+                    data:{id:idLoja, modo:modo}
+                    // success: function(dados){
+                    //     $('#estadoContas').html(dados);
+                    // }
+                });
+            }
+
         </script>
     </head>
     <body>
@@ -198,12 +209,14 @@
             <div id="tabela_conteudo">
                 <table>
                     <tr>
-                        <td colspan="5" class="titulo_conteudo">Dados da Pagina de Lojas</td> 
+                        <td colspan="7" class="titulo_conteudo">Dados da Pagina de Lojas</td> 
                     </tr>                    
                     <tr>
                        <td>N.Filial</td>
                        <td>rua</td> 
                        <td>cep</td>                    
+                       <td>Aberto</td>
+                       <td>Fechado</td>
                        <td>modo</td>
                        <td>Opções</td>
                     </tr>
@@ -216,6 +229,8 @@
 
                         while($rsLoja = mysqli_fetch_assoc($selectLoja))
                         {
+
+                            $estado = $rsLoja['modo'];
                     ?>
 
                     <tr>
@@ -223,6 +238,15 @@
                         <td><?=$rsLoja['rua']?></td>
                         <td><?=$rsLoja['cep']?></td>
                         <td><?=$rsLoja['horaAberto']?></td>
+                        <td><?=$rsLoja['horaFechado']?></td>
+                        <td>
+                            <form class="estadoContas" method="POST" onclick="updateEstadoLoja(<?=$rsLoja['idLoja']?>,<?=$rsLoja['modo']?>);">
+                                <input class="estadoConta" type="radio" name="rdoEstado" value="1"
+                                <?php if($estado == '1') echo('checked')?>>Ativada   
+                                <input class="estadoConta" type="radio" name="rdoEstado" value="0"
+                                <?php if($estado == '0') echo('checked')?>>Desativada
+                            </form>
+                        </td>
                         <td>
                             <div class="container_img">
 
