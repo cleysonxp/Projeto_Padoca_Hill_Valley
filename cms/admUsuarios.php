@@ -1,7 +1,9 @@
 <?php
 
     require_once('funcoes/topo.php');
+    require_once('funcoes/menu.php');
     require_once('funcoes/rodape.php');
+    include('../db/verificaLogin.php');
 
 ?>
 
@@ -15,10 +17,12 @@
         <title>Padoka Hill Valley</title>
         <link rel="stylesheet" href="cms_css/style.css">
         <link rel="stylesheet" href="cms_css/admUsuarios.css">
+        <link rel="shortcut icon" href="../imagens/LogoOficial.png">
     </head>
     <body>
 
         <?php topo()?>
+        <?php menu()?>
 
         <div class="container_corpo">
 

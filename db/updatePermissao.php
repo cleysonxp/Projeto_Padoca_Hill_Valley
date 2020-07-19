@@ -10,6 +10,7 @@
 
             if(isset($_POST['btnEnviarPermissoes']))
             {
+
                 $id = $_GET['id'];
                 $nome = $_POST['txtNome'];
                 $conteudo = $_POST['rdoConteudo'];
@@ -27,7 +28,7 @@
                             acessoProdutos = '".$produto."',
                             descricao = '".$descricao."'
 
-                            where idPermissao = " . $id;
+                            where idPermissao = " .$id;
 
                             
 

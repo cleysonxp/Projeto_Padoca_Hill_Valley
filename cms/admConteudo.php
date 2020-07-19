@@ -1,8 +1,10 @@
 <?php
 
 require_once('funcoes/topo.php');
+require_once('funcoes/menu.php');
 require_once('funcoes/rodape.php');
 require_once('../db/conexao.php');
+include('../db/verificaLogin.php');
 
 $conex = conexaoMysql();
 
@@ -15,10 +17,12 @@ $conex = conexaoMysql();
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Padoka Hill Valley</title>
         <link rel="stylesheet" href="cms_css/style.css">
+        <link rel="shortcut icon" href="../imagens/LogoOficial.png">
     </head>
     <body>
 
         <?php topo()?>
+        <?php menu()?>
 
         <div class="container_corpo">
             <div class="container_corpo_titulo">Administração de Conteúdo</div>

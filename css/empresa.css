@@ -34,9 +34,9 @@
         min-height: 10px;
         height: auto;
         font-size: 1.5em;
-        background-color: #2e1408;
+        /* background-color: #2e1408; */
         margin-right: 30px;
-        color: white;
+        /* color: white; */
         padding: 10px;
         box-sizing: border-box;
         margin-bottom: 20px;

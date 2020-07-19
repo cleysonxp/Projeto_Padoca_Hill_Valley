@@ -15,6 +15,7 @@ require_once('funcoes/menuMobile.php');
         <title>Padoka Hill Valley</title>
         <link rel="stylesheet" href="css/cabecario.css">
         <link rel="stylesheet" href="css/promocoes.css">
+        <link rel="shortcut icon" href="imagens/LogoOficial.png">
         <script src="js/jquery.js"></script>
         <?php menuMobile();?>
         

@@ -35,7 +35,7 @@
                 if(mysqli_query($conex, $sql))
                 echo("<script>
                             alert('Usuário atualizado com sucesso!') ;
-                            location.href = '../cms/admUsuarios.php';
+                            location.href = '../cms/adicionarUsuarios.php';
                         </script>");
                 else
                     echo("

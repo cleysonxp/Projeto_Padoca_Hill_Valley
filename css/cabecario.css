@@ -18,6 +18,7 @@
         background-color: rgba(0, 0, 0, 0.6);
     }
 
+
 /* CONTAINER QUE IRA CONTER TODO O CONTEUDO DE TODAS AS PAGINAS */
 .containerCorpo{
     width: 1200px;
@@ -25,7 +26,7 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255, 0.8);
     padding-top: 140px;
     overflow: hidden;
 
@@ -91,8 +92,9 @@ a:link, a:visited, a:active{
     background-color: #ffffff;
     float: left;
     margin-right: 20px;
-    background-image: url(../imagens/logo3.png);
+    background-image: url(../imagens/LogoOficial.png);
     background-size: 100%;
+    
 }
 
 /* MENU */
@@ -149,7 +151,10 @@ a:link, a:visited, a:active{
 
 .caixa{
     width: 120px;
-    height: 24px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
 }
 
 #botaoOk{
@@ -253,7 +258,7 @@ footer{
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255, 0.8);
     padding-top: 140px;
     overflow: hidden;
     /* text-align: center; */

@@ -16,7 +16,7 @@
             // echo($sql);
             if(mysqli_query($conex, $sql))
 
-            header('location:../cms/adicionarPermissoes.php');
+            header('Location: ../cms/adicionarPermissoes.php');
         }
     }
 ?>

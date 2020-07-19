@@ -13,8 +13,10 @@
     $action = "../db/inserirUsuario.php?modo=inserir";
     
     require_once('funcoes/topo.php');
+    require_once('funcoes/menu.php');
     require_once('funcoes/rodape.php');
     require_once('../db/conexao.php');
+    include('../db/verificaLogin.php');
 
     $conex = conexaoMysql();
 
@@ -63,7 +65,9 @@
         <link rel="stylesheet" href="cms_css/style.css">
         <link rel="stylesheet" href="cms_css/admUsuarios.css">
         <link rel="stylesheet" href="cms_css/adicionarUsuario.css">
+        <link rel="shortcut icon" href="../imagens/LogoOficial.png">
         <script src="../js/jquery2.js"></script>
+        <script defer src="../js/masks.js" type="module"></script>
 
         <script>
             $(document).ready(function(){
@@ -107,13 +111,14 @@
         </div>
 
         <?php topo()?>
+        <?php menu()?>
         <div class="container_corpo">
             <a href="admUsuarios.php">
                 <div class="flecha">
                     🡨
                 </div>
             </a>
-            <form name="formulario_inserir_usuario" action="<?=$action?>" method="post">
+            <form id="form" name="formulario_inserir_usuario" action="<?=$action?>" method="post">
                 <div class="formulario_usuario">
                     <div class="form_titulo">
                         <h1>Adicionar Usuário</h1>
@@ -121,14 +126,15 @@
                     <div class="linha">
                         <div class="linha_titulo">Nome</div>
                         <div class="linha_dados">
-                            <input class="caixa" type="text" name="txtNome" value="<?=$nome?>">
+                            <input class="caixa" type="text" name="txtNome" value="<?=$nome?>" required data-type="text">
                         </div>
                     </div>
 
                     <div class="linha">
                         <div class="linha_titulo">Celular</div>
                         <div class="linha_dados">
-                            <input class="caixa" type="text" name="txtCelular" value="<?=$celular?>">
+                            <input class="caixa" type="text" name="txtCelular" value="<?=$celular?>" required data-type="cellphone"
+                            maxlength="14">
                         </div>
                     </div>
 

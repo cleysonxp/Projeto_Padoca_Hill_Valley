@@ -8,8 +8,10 @@
     $action = "../db/insertCuriosidades.php?modo=inserir";
 
     require_once('funcoes/topo.php');
+    require_once('funcoes/menu.php');
     require_once('funcoes/rodape.php');
     require_once('../db/conexao.php');
+    include('../db/verificaLogin.php');
 
     $conex = conexaoMysql();
 
@@ -48,6 +50,7 @@
         <title>Padoka Hill Valley</title>
         <link rel="stylesheet" href="cms_css/style.css">
         <link rel="stylesheet" href="cms_css/conteudo.css">
+        <link rel="shortcut icon" href="../imagens/LogoOficial.png">
         <script src="../js/teste.js"></script>
         <script src="../js/jquery.form.js"></script>
         <script>
@@ -68,6 +71,7 @@
     <body>
         
         <?php topo()?>
+        <?php menu()?>
 
         <div class="container_corpo">
             <a href="admConteudo.php">
@@ -83,7 +87,7 @@
                     <div class="linha">
                         <div class="linha_titulo">Imagem</div>
                         <div class="linha_entrada_dados alinhar">
-                            <input id="foto" type="file" name="fleImagem" accept="image/jpeg, image/png, image/jpg">
+                            <input id="foto" type="file" name="fleImagem" accept="image/jpeg, image/png, image/jpg" required>
                         </div>
                     </div>
                     <div class="linha_Imagem">
@@ -97,14 +101,14 @@
                     <div class="linha">
                         <div class="linha_titulo">Titulo</div>
                         <div class="linha_entrada_dados">
-                            <input class="caixa_dados" type="text" name="txtTitulo" value="<?=$titulo?>">
+                            <input class="caixa_dados" type="text" name="txtTitulo" value="<?=$titulo?>" required>
                         </div>
                     </div>
 
                     <div class="linha_texto">
                         <div class="linha_titulo_texto">Texto</div>
                         <div class="linha_entrada_texto">
-                            <textarea class="areaTexto" name="txtTexto" id="" cols="30" rows="10"><?=$texto?></textarea>
+                            <textarea class="areaTexto" name="txtTexto" id="" cols="30" rows="10" required><?=$texto?></textarea>
                         </div>
                     </div>
 
@@ -154,9 +158,7 @@
 
                                 <a href="cmsCuriosidades.php?modo=consutaEditar&id=<?=$rsCuriosidade['idCuriosidade']?>">
                                     <div class="editar"></div>
-                                </a>
-
-                                <div class="visualizar" onclick="visualizarUsuario(<?=$rsUsuario['idUsuario']?>);"></div>
+                                </a>                               
                             </div>
                         </td>
                     </tr>

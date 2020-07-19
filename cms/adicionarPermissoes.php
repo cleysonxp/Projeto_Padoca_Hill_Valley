@@ -1,5 +1,5 @@
 <?php
-    $idPermissao = null;
+    $idPermissao = 0;
     $nome = null;
     $acessoConteudo = null;
     $descricao = null;
@@ -10,8 +10,10 @@
     $action = "../db/inserirPermissao.php?modo=inserir";
 
     require_once('funcoes/topo.php');
+    require_once('funcoes/menu.php');
     require_once('funcoes/rodape.php');
     require_once('../db/conexao.php');
+    include('../db/verificaLogin.php');
 
     $conex = conexaoMysql();
 
@@ -23,14 +25,14 @@
             {
                 $id = $_GET['id'];
                 
-                $sql = "select * from tblpermissoes";
+                $sql = "select * from tblpermissoes where idPermissao = " .$id;
                 
                 $selectDados = mysqli_query($conex, $sql);
                 
 
                 if($rsListPermissoes = mysqli_fetch_assoc($selectDados)){
                     
-                    $idPermissao = $rsListPermissoes['idPermissao'];
+                    // $idPermissao = $rsListPermissoes['idPermissao'];
                     $nome = $rsListPermissoes['nome'];
                     $acessoConteudo = $rsListPermissoes['acessoConteudo'];
                     $acessoFaleConosco = $rsListPermissoes['acessoFaleConosco'];
@@ -56,10 +58,12 @@
         <link rel="stylesheet" href="cms_css/style.css">
         <link rel="stylesheet" href="cms_css/admUsuarios.css">
         <link rel="stylesheet" href="cms_css/adicionarPermissoes.css">
+        <link rel="shortcut icon" href="../imagens/LogoOficial.png">
     </head>
     <body>
 
         <?php topo()?>
+        <?php menu()?>
 
         <div class="container_corpo">
             <a href="admUsuarios.php">
@@ -74,38 +78,38 @@
                         <h1>Adicionar Novas Permissões</h1>
                     </div>
                     <div class="linha_formulario">
-                        <div class="tituloInput">Nome da Permissão</div>
+                        <div class="tituloInput">Nível da Permissão</div>
                         <div class="linha_input">
-                            <input class="caixa" type="text" name="txtNome" value="<?=$nome?>">
+                            <input class="caixa" type="text" name="txtNome" value="<?=$nome?>" required>
                         </div>
                     </div>
 
                     <div class="linha_formulario">
                         <div class="tituloInput">Acesso ao Conteúdo</div>
                         <div class="linha_input radio">
-                            <input type="radio" name="rdoConteudo" value="1" <?php if($acessoConteudo == '1') echo('checked')?>>Sim
-                            <input type="radio" name="rdoConteudo" value="0" <?php if($acessoConteudo == '0') echo('checked')?>>Não
+                            <input type="radio" name="rdoConteudo" value="1" required <?php if($acessoConteudo == '1') echo('checked')?>>Sim
+                            <input type="radio" name="rdoConteudo" value="0" required <?php if($acessoConteudo == '0') echo('checked')?>>Não
                         </div>
                     </div>
                     <div class="linha_formularioFC">
                         <div class="tituloInputFC">Acesso ao Fale Conosco</div>
                         <div class="linha_inputFC radio">
-                            <input type="radio" name="rdoFaleConosco" value="1" <?php if($acessoFaleConosco == '1') echo('checked')?>>Sim
-                            <input type="radio" name="rdoFaleConosco" value="0" <?php if($acessoFaleConosco == '0') echo('checked')?>>Não
+                            <input type="radio" name="rdoFaleConosco" value="1" required <?php if($acessoFaleConosco == '1') echo('checked')?>>Sim
+                            <input type="radio" name="rdoFaleConosco" value="0" required <?php if($acessoFaleConosco == '0') echo('checked')?>>Não
                         </div>
                     </div>
                     <div class="linha_formulario">
                         <div class="tituloInput">Acesso ao Usuários</div>
                         <div class="linha_input radio">
-                            <input type="radio" name="rdoUsuario" value="1" <?php if($acessoUsuarios == '1') echo('checked')?>>Sim
-                            <input type="radio" name="rdoUsuario" value="0" <?php if($acessoUsuarios == '0') echo('checked')?>>Não
+                            <input type="radio" name="rdoUsuario" value="1" required <?php if($acessoUsuarios == '1') echo('checked')?>>Sim
+                            <input type="radio" name="rdoUsuario" value="0" required <?php if($acessoUsuarios == '0') echo('checked')?>>Não
                         </div>
                     </div>
                     <div class="linha_formulario">
                         <div class="tituloInput">Acesso a Produtos</div>
                         <div class="linha_input radio">
-                            <input type="radio" name="rdoProduto" value="1" <?php if($acessoProdutos == '1') echo('checked')?>>Sim
-                            <input type="radio" name="rdoProduto" value="0" <?php if($acessoProdutos == '0') echo('checked')?>>Não
+                            <input type="radio" name="rdoProduto" value="1" required <?php if($acessoProdutos == '1') echo('checked')?>>Sim
+                            <input type="radio" name="rdoProduto" value="0" required <?php if($acessoProdutos == '0') echo('checked')?>>Não
                         </div>
                     </div>
                     <div class="linha_formulario_desc">

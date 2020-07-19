@@ -59,7 +59,7 @@
                 </a>
             </div>
             
-            <div class="visualizar_titulo" >visualizar dados do usuário</div>
+            <div class="visualizar_titulo" >visualizar dados das Lojas</div>
             <table>
                 <tr>
                     <td>Filial</td>

@@ -16,6 +16,7 @@ require_once('funcoes/menuMobile.php');
         <!-- <link rel="stylesheet" href="css/style2.css"> -->
         <link rel="stylesheet" href="css/cabecario.css">
         <link rel="stylesheet" href="css/curiosidade.css">
+        <link rel="shortcut icon" href="imagens/LogoOficial.png">
         <script src="js/jquery.js"></script>
         <?php menuMobile();?>
     </head>

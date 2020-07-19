@@ -1,6 +1,7 @@
 <?php
-
+session_start();
     function topo (){
+        
         echo('
         
                 <header>
@@ -17,52 +18,6 @@
                     </div>
                     
                 </div>
-
-                <!-- AREA DO MENU -->
-                <nav class="container_menu">
-                    
-                    <!-- AREA DE OPÇÕES DO MENU -->
-                    <div class="container_menu_icone">
-                    <a href="admConteudo.php">
-                            <div class="menu_icone">
-                                <img class="imgIcone" src="../icones/conteudo.png" alt="">
-                            </div>
-                            <p>
-                                Adm. Conteúdo
-                            </p>
-                        </a>
-                    </div>
-
-                    <div class="container_menu_icone">
-
-                        <a href="admFaleConosco.php">
-                            <div class="menu_icone">
-                            <img class="imgIcone" src="../icones/faleConosco.png" alt="">
-                            </div>
-                            <p>
-                                Adm. Fale Conosco
-                            </p>
-                        </a>
-                    </div>
-
-                    <div class="container_menu_icone">
-                        <a href="admUsuarios.php">
-                            <div class="menu_icone">
-                                <img class="imgIcone" src="../icones/usuarios.png" alt="">
-                            </div>
-                            <p>
-                                Adm. Usuários
-                            </p>
-                        </a>
-                    </div>
-
-                    <div class="container_bemvindo">
-                        <p>Bem Vindo: [xxxxx xxxx].</p>
-
-                        <p id="logout">Logout</p>
-                    </div>
-
-                </nav>
             </header>
         
         

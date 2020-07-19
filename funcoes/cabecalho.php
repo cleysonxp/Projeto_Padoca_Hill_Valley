@@ -1,5 +1,4 @@
 <?php
-
 function cabecalho(){
 
 echo('
@@ -15,7 +14,7 @@ echo('
                 <nav id="containerMenuMobile">
 
                     <div id="iconeMenu">
-                        <img src="../imagens/logo.png" alt="">
+                        
                     </div>
 
                     <div id="menuMobile">
@@ -114,20 +113,20 @@ echo('
                     </ul>
                 </nav>
                 <div id="containerAutenticacaoCMS">
-                    <form name="autenticacaoCMS" method="post">
+                    <form action="db/login.php" name="autenticacaoCMS" method="post">
                         <div class="usuario" >
                             Usuario:
-                            <input class="caixa" type="text" name="usuario"  >
+                            <input id="user" class="caixa" type="text" name="txtUsuario">
 
                         </div>
 
                         <div class="senha">
                             Senha:
-                            <input class="caixa" type="password" name="senha" >
+                            <input class="caixa" type="password" name="txtSenha">
                         </div>
 
                         <div id="botaoOk">
-                            <button class="botaoOk" type="submit">Ok</button>
+                            <button class="botaoOk" name="btnLogin" type="submit">Login</button>
                         </div>
                     </form>
                 </div>

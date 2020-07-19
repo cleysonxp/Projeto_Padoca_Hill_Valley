@@ -46,7 +46,10 @@ body{
     background-color: white;
     float: left;
     margin-top: 50px;
-    /* box-sizing: border-box; */
+    background-image: url(../../imagens/cms-logo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Area do menu */
@@ -99,6 +102,10 @@ body{
 #logout{
     margin-top: 65px;
     margin-left: 200px;
+}
+
+#logout:hover{
+    color: blueviolet;
 }
 
 
@@ -159,6 +166,11 @@ a:link, a:visited, a:active{
     margin-left: 20px;
     margin-bottom: 20px;
     color: black;
+}
+
+.editConteudo:hover{
+    background-color: #2e1408;
+    color: white;
 }
 
 input[type=radio] {

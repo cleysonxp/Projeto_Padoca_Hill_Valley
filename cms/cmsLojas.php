@@ -18,8 +18,10 @@
     // $action2 = "../db/uploadImagemEmpresa.php";
 
     require_once('funcoes/topo.php');
+    require_once('funcoes/menu.php');
     require_once('funcoes/rodape.php');
     require_once('../db/conexao.php');
+    include('../db/verificaLogin.php');
 
     $conex = conexaoMysql();
 
@@ -66,8 +68,10 @@
         <title>Padoka Hill Valley</title>
         <link rel="stylesheet" href="cms_css/style.css">
         <link rel="stylesheet" href="cms_css/conteudo.css">
+        <link rel="shortcut icon" href="../imagens/LogoOficial.png">
         <script src="../js/teste.js"></script>
         <script src="../js/jquery.form.js"></script>
+        <script defer src="../js/masks.js" type="module"></script>
         <script>
             $(document).ready(function(){
 
@@ -114,6 +118,7 @@
         </div>
         
         <?php topo()?>
+        <?php menu()?>
 
         <div class="container_corpo">
             <a href="admConteudo.php">
@@ -130,7 +135,7 @@
                     <div class="linha">
                         <div class="linha_titulo">Imagem da loja</div>
                         <div class="linha_entrada_dados alinhar">
-                            <input id="foto" type="file" name="fleImagem" accept="image/jpeg, image/png, image/jpg" >
+                            <input id="foto" type="file" name="fleImagem" accept="image/jpeg, image/png, image/jpg">
                          </div>
                     </div>
                     <div class="linha_Imagem">
@@ -140,62 +145,62 @@
                     </div>
                 </form>
 
-                <form action="<?=$action?>" method="post" enctype="multipart/form-data">
+                <form id="form" class="form" action="<?=$action?>" method="post" enctype="multipart/form-data">
                 
                     <div class="linha">
                         <div class="linha_titulo">Filial</div>
                         <div class="linha_entrada_dados">
-                            <input class="caixa_dados" type="text" name="txtFilial" value="<?=$numeroFilial?>">
+                            <input class="caixa_dados" type="text" name="txtFilial" value="<?=$numeroFilial?>" required data-type="number" maxlength="5">
                         </div>
                     </div>                
 
                     <div class="linha">
                         <div class="linha_titulo">Rua</div>
                         <div class="linha_entrada_dados">
-                            <input class="caixa_dados" type="text" name="txtRua" value="<?=$rua?>">
+                            <input class="caixa_dados" type="text" name="txtRua" value="<?=$rua?>" required>
                         </div>
                     </div>
 
                     <div class="linha">
                         <div class="linha_titulo">Número</div>
                         <div class="linha_entrada_dados">
-                            <input class="caixa_dados" type="text" name="txtNumero" value="<?=$numero?>">
+                            <input class="caixa_dados" type="text" name="txtNumero" value="<?=$numero?>" required data-type="number" maxlength="9"> 
                         </div>
                     </div>
 
                     <div class="linha">
                         <div class="linha_titulo">Bairro</div>
                         <div class="linha_entrada_dados">
-                            <input class="caixa_dados" type="text" name="txtBairro" value="<?=$bairro?>">
+                            <input class="caixa_dados" type="text" name="txtBairro" value="<?=$bairro?>" required data-type="text">
                         </div>
                     </div>
 
                     <div class="linha">
                         <div class="linha_titulo">Cep</div>
                         <div class="linha_entrada_dados">
-                            <input class="caixa_dados" type="text" name="txtCep" value="<?=$cep?>">
+                            <input class="caixa_dados" id="cep" type="text" name="txtCep" data-type="cep" value="<?=$cep?>" required maxlength="9">
                         </div>
                     </div>
 
                     <div class="linha">
                         <div class="linha_titulo">Hora de Abrir</div>
                         <div class="linha_entrada_dados centro">
-                            <input class="tempo" type="time" name="timeAberto" value="<?=$horaAberto?>">
+                            <input class="tempo" type="time" name="timeAberto" value="<?=$horaAberto?>" required>
                         </div>
                     </div>
 
                     <div class="linha">
                         <div class="linha_titulo">Hora de Fechar</div>
                         <div class="linha_entrada_dados centro"> 
-                            <input class="tempo" type="time" name="timeFechado" value="<?=$horaFechado?>">
+                            <input class="tempo" type="time" name="timeFechado" value="<?=$horaFechado?>" required>
                         </div>
                     </div> 
 
                     <div class="linha">
                         <div class="linha_titulo">Modo</div>
                         <div class="linha_entrada_dados centro">
-                            <input type="radio" name="rdoModo" value="1" <?php if($modo == '1') echo('checked')?>>Ativado
-                            <input type="radio" name="rdoModo" value="0" <?php if($modo == '0') echo('checked')?>>Desativado
+                            <input type="radio" name="rdoModo" value="1" <?php if($modo == '1') echo('checked')?> required>Ativado
+                            <input type="radio" name="rdoModo" value="0" <?php if($modo == '0') echo('checked')?> required>Desativado
                         </div>
                     </div>
 

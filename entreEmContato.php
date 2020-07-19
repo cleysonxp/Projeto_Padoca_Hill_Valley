@@ -20,7 +20,9 @@ $conex = conexaoMysql();
         <link rel="stylesheet" href="css/cabecario.css">
         <!-- <link rel="stylesheet" href="css/style2.css"> -->
         <link rel="stylesheet" href="css/entreContato.css">
+        <link rel="shortcut icon" href="imagens/LogoOficial.png">
         <script src="js/jquery.js"></script>
+        <script defer src="js/masks.js" type="module"></script>
 
         <?php menuMobile();?>
         
@@ -31,7 +33,7 @@ $conex = conexaoMysql();
     
         <div class="containerCorpo">
 
-            <form name="formulario_entre_em_contato" action="db/insertCliente.php?modo=inserir" method="post">
+            <form id="form" name="formulario_entre_em_contato" action="db/insertCliente.php?modo=inserir" method="post">
                 <div class="container_formulario">
 
                     <div class="formulario_titulo">Entre em Contato</div>
@@ -39,21 +41,21 @@ $conex = conexaoMysql();
                     <div class="formulario_linha">
                         <div class="linha_titulo">Nome*</div>        
                         <div class="linha_input">
-                            <input class="caixaInput" type="text" name="txtNome" required value="">
+                            <input class="caixaInput" type="text" name="txtNome" required data-type="text">
                         </div>
                     </div>
     
                     <div class="formulario_linha">
                         <div class="linha_titulo">Telefone</div>        
                         <div class="linha_input">
-                            <input class="caixaInput" id="telefone" type="text" name="txtTelefone"  value="">
+                            <input class="caixaInput" id="telefone" type="text" name="txtTelefone" data-type="telefone" maxlength="13">
                         </div>
                     </div>
     
                     <div class="formulario_linha">
                         <div class="linha_titulo">Celular*</div>        
                         <div class="linha_input">
-                            <input class="caixaInput" type="text" name="txtCelular" required value="">
+                            <input class="caixaInput" type="text" name="txtCelular" required data-type="cellphone" maxlength="14">
                         </div>
                     </div>
     
@@ -81,7 +83,7 @@ $conex = conexaoMysql();
                     <div class="formulario_linha">
                         <div class="linha_titulo">Profissão*</div>        
                         <div class="linha_input">
-                            <input class="caixaInput" type="text" name="txtProfissao" required value="">
+                            <input class="caixaInput" type="text" name="txtProfissao" required data-type="text">
                         </div>
                     </div>
     
