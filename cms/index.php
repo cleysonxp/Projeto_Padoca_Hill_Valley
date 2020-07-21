@@ -19,7 +19,7 @@
         <link rel="shortcut icon" href="../imagens/LogoOficial.png">
     </head>
     <body>
-            <?php topo()?>
+            
             <?php menu()?>
 
             <div class="container_opcao">

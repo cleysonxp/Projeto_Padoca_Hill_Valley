@@ -322,6 +322,9 @@ a:link, a:visited, a:active{
     /* margin-right: 20px; */
     margin-left: auto;
     margin-right: auto;
+    background-image: url(../imagens/LogoOficial.png);
+    background-size: 88%;
+    background-position: center;
 }
 
 /* MENU */

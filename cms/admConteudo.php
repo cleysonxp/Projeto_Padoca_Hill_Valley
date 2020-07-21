@@ -21,7 +21,7 @@ $conex = conexaoMysql();
     </head>
     <body>
 
-        <?php topo()?>
+        
         <?php menu()?>
 
         <div class="container_corpo">

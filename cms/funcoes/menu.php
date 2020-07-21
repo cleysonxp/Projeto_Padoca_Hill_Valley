@@ -12,25 +12,45 @@
 
 
         $sql = "select tblusuarios.nomeLogin as nomeLogin, tblusuarios.senha as senha, tblusuarios.estadoConta, 
-                    tblpermissoes.nome as nivel from tblusuarios, tblpermissoes 
-                     where tblpermissoes.idPermissao = tblusuarios.idPermissao
-                    and nomeLogin = '".$nome."' and senha = '".$senha."' ";
+                        tblpermissoes.nome as nivel, tblpermissoes.acessoConteudo,
+                        tblpermissoes.acessoFaleConosco, tblpermissoes.acessoProdutos, 
+                        tblpermissoes.acessoUsuarios
+                        from tblusuarios, tblpermissoes 
+                        where tblpermissoes.idPermissao = tblusuarios.idPermissao
+                        and nomeLogin = '".$nome."' and senha = '".$senha."' ";
 
         $select =  mysqli_query($conex,$sql);
 
         $rsSelect = mysqli_fetch_assoc($select);
 
-        if($rsSelect)
 
-        if($rsSelect['nivel'] == 1){
+        if($rsSelect['estadoConta'] != 0){
             echo('
+        
+                <header>
 
-        <!-- AREA DO MENU -->
-        <nav class="container_menu">
-            
-            <!-- AREA DE OPÇÕES DO MENU -->
+                <!-- Area do cabecario -->
+                <div class="container_topo">
+
+                    <div class="container_titulo">
+                        <span class="cms">CMS</span> - Sistema de Gerenciamento de Site 
+                    </div>
+
+                    <div class="conatiner_image">
+                        
+                    </div>
+                    
+                </div>
+            </header>
+        
+        ');
+
+            echo('<nav class="container_menu">');
+
+            if($rsSelect['acessoConteudo'] == 1){
+            echo('
             <div class="container_menu_icone">
-            <a href="admConteudo.php">
+                <a href="admConteudo.php">
                     <div class="menu_icone">
                         <img class="imgIcone" src="../icones/conteudo.png" alt="">
                     </div>
@@ -39,9 +59,12 @@
                     </p>
                 </a>
             </div>
+            ');
+            }
 
+        if($rsSelect['acessoFaleConosco'] == 1){
+            echo('
             <div class="container_menu_icone">
-
                 <a href="admFaleConosco.php">
                     <div class="menu_icone">
                     <img class="imgIcone" src="../icones/faleConosco.png" alt="">
@@ -51,7 +74,11 @@
                     </p>
                 </a>
             </div>
+            ');
+        }
 
+        if($rsSelect['acessoUsuarios'] == 1){
+            echo('
             <div class="container_menu_icone">
                 <a href="admUsuarios.php">
                     <div class="menu_icone">
@@ -62,8 +89,11 @@
                     </p>
                 </a>
             </div>
+            ');
+        }
 
-            <div class="container_bemvindo">
+        echo('
+        <div class="container_bemvindo">
                 <p>Bem Vindo ' 
                     .$nome.'
                 </p>
@@ -76,91 +106,29 @@
             </div>
 
         </nav>
-
         ');
+
+        /*************************************************************************
+         * 
+         * 
+         *  O MENU DE DE PRODUTOS SERÁ IMPLEMENTADO NA PROXIMA FASE DO PROJETO
+         * 
+         * 
+         *************************************************************************/
+
         }
 
-        elseif($rsSelect['nivel'] == 2){
-            echo('
-                <nav class="container_menu">
-                    <div class="container_menu_icone">
-                        <a href="admConteudo.php">
-                            <div class="menu_icone">
-                                <img class="imgIcone" src="../icones/conteudo.png" alt="">
-                            </div>
-                            <p>
-                                Adm. Conteúdo
-                            </p>
-                        </a>
-                    </div>
-
-                    <div class="container_bemvindo">
-                <p>Bem Vindo ' 
-                    .$nome.'
-                </p>
-
-                <p id="logout">
-                    <a href="../db/logout.php">
-                        Logout
-                    </a>
-                </p>
-            </div>
-
-                </nav>
-            
-            ');
-        }
-        elseif($rsSelect['nivel'] == 5){
-            echo('
-            <nav class="container_menu">
-            
-            <!-- AREA DE OPÇÕES DO MENU -->
-            <div class="container_menu_icone">
-            <a href="admConteudo.php">
-                    <div class="menu_icone">
-                        <img class="imgIcone" src="../icones/conteudo.png" alt="">
-                    </div>
-                    <p>
-                        Adm. Conteúdo
-                    </p>
-                </a>
-            </div>
-
-            <div class="container_menu_icone">
-
-                <a href="admFaleConosco.php">
-                    <div class="menu_icone">
-                    <img class="imgIcone" src="../icones/faleConosco.png" alt="">
-                    </div>
-                    <p>
-                        Adm. Fale Conosco
-                    </p>
-                </a>
-            </div>
-
-            <div class="container_bemvindo">
-                <p>Bem Vindo ' 
-                    .$nome.'
-                </p>
-
-                <p id="logout">
-                    <a href="../db/logout.php">
-                        Logout
-                    </a>
-                </p>
-            </div>
-
-        </nav>
-            ');
+        else{
+            echo("
+                <script> 
+                    alert('Esta conta está destivada!') ;
+                    location.href = '../funcoes/erro.php';
+                    // Permite voltar a pagina anterior
+                    // window.history.back();
+                </script>
+            ");
         }
 
-
-
-
-
-
-
-
-
+        
         
     }

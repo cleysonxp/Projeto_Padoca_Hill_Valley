@@ -25,7 +25,7 @@ if($row == 1){
     header('Location: ../cms/index.php');
     exit();
 } else{
-        header('Location: ../index.php');
+        header('Location: ../funcoes/LoginIncorreto.php');
     exit();
 }
 
