@@ -3,6 +3,7 @@
 require_once('funcoes/cabecalho.php');
 require_once('funcoes/rodape.php');
 require_once('funcoes/menuMobile.php');
+require_once('db/conexao.php');
 
 ?>
 
@@ -29,66 +30,44 @@ require_once('funcoes/menuMobile.php');
                 <h1>Nossas filiais</h1>
             </div>
 
-            <div class="container_loja">
+            <?php
 
-                <div class="filial">Filial 1</div>
-
-                <div class="imagem_loja">
-                
-                </div>
-
-                <div class="container_funcionamento">
-                    <p>Localização: R.Miguel n° 109, Villa silveiras 06381-120 </p>                    
-                    <p>Horário de funcionamento:  04:30 as 22:50</p>
-                </div>
-
-            </div>
-
-            <div class="container_loja">
-
-                <div class="filial">Filial 1</div>
-
-                <div class="imagem_loja">
-                
-                </div>
-
-                <div class="container_funcionamento">
-                    <p>Localização: R.Miguel n° 109, Villa silveiras 06381-120 </p>                    
-                    <p>Horário de funcionamento:  04:30 as 22:50</p>
-                </div>
-
-            </div>
-
-            <div class="container_loja">
-
-                <div class="filial">Filial 1</div>
-
-                <div class="imagem_loja">
-                
-                </div>
-
-                <div class="container_funcionamento">
-                    <p>Localização: R.Miguel n° 109, Villa silveiras 06381-120 </p>                    
-                    <p>Horário de funcionamento:  04:30 as 22:50</p>
-                </div>
-
-            </div><div class="container_loja">
-
-                <div class="filial">Filial 1</div>
-
-                <div class="imagem_loja">
-                
-                </div>
-
-                <div class="container_funcionamento">
-                    <p>Localização: R.Miguel n° 109, Villa silveiras 06381-120 </p>                    
-                    <p>Horário de funcionamento:  04:30 as 22:50</p>
-                </div>
-
-            </div>
+                $conex = conexaoMysql();
             
+                $sql = " select * from tbllojas";
 
+                $selectLoja = mysqli_query($conex, $sql);
+
+                while($rsLoja = mysqli_fetch_assoc($selectLoja)){
+
+                    if($rsLoja['modo'] != 0){
+
+                            
+            ?>
+
+            <div class="container_loja">
+
+                <div class="filial">
+                    Filial <?=$rsLoja['numeroFilial']?>
+                </div>
+
+                <div class="imagem_loja">
+                        <img class="imgLoja" src="db/arquivos/<?=$rsLoja['imagem']?>">
+                </div>
+
+                <div class="container_funcionamento">
+                    <p>Localização: <?=$rsLoja['rua']?> n° <?=$rsLoja['numero']?>, <?=$rsLoja['bairro']?> <?=$rsLoja['cep']?> </p>                    
+                    <p>Horário de funcionamento:  <?=$rsLoja['horaAberto']?> as <?=$rsLoja['horaFechado']?></p>
+                </div>
+
+            </div>   
+
+            <?php
+                }
+
+                    }
             
+            ?>       
 
                        
         </div>

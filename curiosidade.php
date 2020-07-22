@@ -3,6 +3,7 @@
 require_once('funcoes/cabecalho.php');
 require_once('funcoes/rodape.php');
 require_once('funcoes/menuMobile.php');
+require_once('db/conexao.php');
 
 ?>
 
@@ -29,18 +30,32 @@ require_once('funcoes/menuMobile.php');
                 Curiosidades dos Produtos
             </div>
 
+            <?php
+            
+                $conex = conexaoMysql();
+                
+                $sql = " select * from tblcuriosidades";
+
+                $selectCuriosidades = mysqli_query($conex, $sql);
+
+                while($rsCuriosidades = mysqli_fetch_assoc($selectCuriosidades))
+                {                
+            ?>
+
             <section class="curiosidade">
-                <h1>Café</h1>
+                <h1><?=$rsCuriosidades['titulo']?></h1>
                 <div class="curiosidadeProduto">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptate hic quas natus quod cum, dolorum voluptatibus explicabo ipsam libero error consequatur dolor soluta impedit, repellat quasi totam veniam fugiat!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptate hic quas natus quod cum, dolorum voluptatibus explicabo ipsam libero error consequatur dolor soluta impedit, repellat quasi totam veniam fugiat!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptate hic quas natus quod cum, dolorum voluptatibus explicabo ipsam libero error consequatur dolor soluta impedit, repellat quasi totam veniam fugiat!
+                    <?=$rsCuriosidades['texto']?>
                 </div>
 
                 <div class="imagemProduto">
-                    <!-- <img src="./imagens/cafe3.jpg" alt=""> -->
+                    <img class="imgCuri" src="db/arquivos/<?=$rsCuriosidades['imagem']?>" alt="db/arquivos/<?=$rsCuriosidades['imagem']?>">
                 </div>
             </section>
+
+            <?php
+                }
+            ?>
 
         </div>
 

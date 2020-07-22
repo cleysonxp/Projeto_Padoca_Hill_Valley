@@ -1,3 +1,8 @@
+.imgLoja{
+    width: 100%;
+    height: inherit;
+}
+
 @media screen and (min-device-width:1300px){
     .titulo_lojas{
         width: 500px;
@@ -59,7 +64,7 @@
     
     .container_funcionamento > p{
         color: white;
-        font-size: 1.4em;
+        font-size: 1.3em;
     }    
  
     
